@@ -50,3 +50,41 @@
 </body>
 </html>
 
+
+
+import React from 'react';
+import Header from './Header';
+import WorkExperience from './WorkExperience';
+import ProjectCard from './ProjectCard';
+import Contact from './Contact';
+
+const Portfolio: React.FC = () => {
+  return (
+    <main className="flex flex-col justify-center items-center px-20 py-44 -mt-1 w-full bg-slate-950 max-md:px-5 max-md:py-24 max-md:max-w-full">
+      <div className="flex flex-col -mb-11 ml-14 max-w-full w-[1172px] max-md:mb-2.5">
+        <Header />
+        <WorkExperience />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f14a773b539e6e71de4c24064d18cddb281d287b48aac564c541c9ccc6c5b246?placeholderIfAbsent=true&apiKey=ab45377ab86d414dac61ec8b3471a62a" alt="Portfolio showcase" className="object-contain self-center mt-40 max-w-full rounded-none aspect-[1.19] w-[895px] max-md:mt-10" />
+        <section className="mt-48 max-md:mt-10 max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col">
+            <ProjectCard
+              title="Example Project"
+              description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+              imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/535a955465f07d0026448d7018cb69a14baa333a5117e7042ca75593089efebf?placeholderIfAbsent=true&apiKey=ab45377ab86d414dac61ec8b3471a62a"
+              isReversed={false}
+            />
+            <ProjectCard
+              title="Example Project"
+              description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+              imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/c5289500b40e063fa01aabe45e5264d25c78628c858b109997b61469e3179231?placeholderIfAbsent=true&apiKey=ab45377ab86d414dac61ec8b3471a62a"
+              isReversed={true}
+            />
+          </div>
+        </section>
+        <Contact />
+      </div>
+    </main>
+  );
+};
+
+export default Portfolio;
