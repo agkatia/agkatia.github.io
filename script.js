@@ -5,7 +5,7 @@
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = '_______'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -61,7 +61,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Hi, I\'m Katia.', 'Passionate Data Engineer.', 'Turning Data into Insights.', 'Let\'s Connect!'
+'Hi, I\'m Katia.', 'Passionate Data Engineer.', 'Welcome to my Portfolio', 'Let\'s Connect!'
 ]
 
 const el = document.querySelector('.text')
