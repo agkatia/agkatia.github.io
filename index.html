@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Scramble Effect</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="text"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="textScramble.js"></script>
+    <script>
+        const phrases = [
+            'Hello, I\'m Katia.',
+            'Data Engineer.',
+            'Let\'s Connect!'
+        ];
+
+        const el = document.querySelector('.text');
+        const fx = new TextScramble(el);
+
+        let counter = 0;
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        next();
+    </script>
 </body>
 </html>
