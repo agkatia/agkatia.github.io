@@ -34,7 +34,7 @@ html, body {
 .flag {
     width: 40px; /* Adjust the size of the flag */
     height: auto;
-    margin-right: 30px; /* Space between the flag and text */
+    margin-right: 60px; /* Space between the flag and text */
 }
 
 .navbar-left span {
