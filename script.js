@@ -61,7 +61,7 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Hi, I\'m Katia.', 'Passionate Data Engineer.', 'Welcome to my Portfolio', 'Let\'s Connect!'
+'Hey, I\'m Katia.', 'A Business Intelligence Developer', 'Here\'s My Jouney Visualized', 'Let\'s Connect!'
 ]
 
 const el = document.querySelector('.text')
