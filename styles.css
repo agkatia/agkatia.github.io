@@ -48,3 +48,7 @@ html, body {
 .dud {
     color: #757575;
 }
+
+.timeline { max-width: 100%; height: auto; margin-top: 20px;  /* Add some spacing from the top element */ 
+display: block; margin-left: 
+    auto; margin-right: auto; }
