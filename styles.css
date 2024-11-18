@@ -21,11 +21,28 @@ html, body {
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center the content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a {
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 16px; /* Adjust the size of the flag */
+    height: auto;
+    margin-right: 8px; /* Space between the flag and text */
+}
+
+.navbar-left span {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.navbar-right a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
@@ -36,7 +53,7 @@ html, body {
     font-size: 16px;
 }
 
-.navbar a:hover {
+.navbar-right a:hover {
     background-color: #ddd;
     color: black;
 }
@@ -60,9 +77,9 @@ html, body {
 }
 
 .timeline {
-    width: 80%; /* Increase size while keeping the aspect ratio */
-    max-width: 600px; /* Set a max width to ensure it doesn't become too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    max-width: 600px;
+    height: auto;
     margin-top: 20px;
     display: block;
     margin-left: auto;
