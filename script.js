@@ -61,7 +61,8 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Hey, I\'m Katia.', 'A Business Intelligence Developer', 'Here\'s My Jouney Visualized', 'Let\'s Connect!'
+'Hey, I\'m Katia', 'A Business Intelligence Developer','Welcome to My Portfolio',
+'Let\'s Connect!'
 ]
 
 const el = document.querySelector('.text')
@@ -70,7 +71,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 800)
+    setTimeout(next, 500)
   })
   counter = (counter + 1) % phrases.length
 }
