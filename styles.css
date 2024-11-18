@@ -60,8 +60,9 @@ html, body {
 }
 
 .timeline {
-    max-width: 100%;
-    height: auto;
+    width: 80%; /* Increase size while keeping the aspect ratio */
+    max-width: 600px; /* Set a max width to ensure it doesn't become too large */
+    height: auto; /* Maintain aspect ratio */
     margin-top: 20px;
     display: block;
     margin-left: auto;
