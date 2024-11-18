@@ -10,19 +10,21 @@ html, body {
 .navbar {
     background-color: #333;
     overflow: hidden;
-    padding: 14px 16px; /* Ensure the navbar has padding */
-    position: fixed; /* Make the navbar fixed */
-    width: 100%; /* Stretch the navbar across the width */
-    top: 0; /* Stick the navbar to the top */
+    padding: 14px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
 }
 
 .navbar a {
-    float: right;
-    display: inline-block;
+    display: inline-block; /* Display links side by side */
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px; /* Increase padding for more space */
     text-decoration: none;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .navbar a:hover {
@@ -32,23 +34,18 @@ html, body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: calc(100% - 50px); /* Adjust height for the navbar */
-    padding-top: 60px; /* Add space below the fixed navbar */
+    align-items: center;
+    margin-top: 60px; /* Adjust this value to be below the navbar */
 }
 
 .text {
     font-weight: 100;
     font-size: 28px;
     color: #FAFAFA;
-    margin-top: 20px; /* Add space between elements */
+    margin-top: 20px; /* Add some space if needed */
 }
+
 .dud {
     color: #757575;
 }
-
-.timeline { max-width: 100%; height: auto; margin-top: 20px;  /* Add some spacing from the top element */ 
-display: block; margin-left: 
-    auto; margin-right: auto; }
