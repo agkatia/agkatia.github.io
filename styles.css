@@ -5,6 +5,13 @@ html, body {
     background: #212121;
     height: 100%;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 .navbar {
@@ -14,19 +21,19 @@ html, body {
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    justify-content: flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
-    display: inline-block; /* Display links side by side */
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 20px; /* Increase padding for better visibility */
+    padding: 14px 20px;
     text-decoration: none;
-    white-space: nowrap; /* Prevent text wrapping */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-    font-size: 16px; /* Adjust font size for better fit */
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -38,16 +45,25 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px; /* Adjust this value to be below the navbar */
+    margin-top: 70px; /* Ensure there's enough space below the fixed navbar */
 }
 
 .text {
     font-weight: 100;
     font-size: 28px;
     color: #FAFAFA;
-    margin-top: 20px; /* Add some space if needed */
+    margin-top: 20px;
 }
 
 .dud {
     color: #757575;
+}
+
+.timeline {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
