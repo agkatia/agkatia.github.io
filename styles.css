@@ -58,12 +58,12 @@ html, body {
     color: black;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px; /* Ensure there's enough space below the fixed navbar */
-}
+.container { display: flex; flex-direction: column; 
+            align-items: center;
+            justify-content: center; 
+            /* Center content vertically */ 
+            height: 100vh; /* Full viewport height */
+            text-align: center; /* Center-align text within the container */}
 
 .text {
     font-weight: 100;
@@ -85,7 +85,8 @@ html, body {
     margin-left: auto;
     margin-right: auto;
 }
-.introduction { margin-top: 40px; /* Add some space above the introduction */ max-width: 800px; /* Limit the width for better readability */
+.introduction { margin-top: 40px; /* Add some space above the introduction */ 
+               max-width: 800px; /* Limit the width for better readability */
                color: #FAFAFA; /* Set text color to white */ 
                font-size: 18px; /* Adjust font size for readability */
                text-align: center; /* Center the text */ }
