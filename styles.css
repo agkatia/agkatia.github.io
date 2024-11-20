@@ -13,17 +13,22 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Prevents horizontal scroll */
 }
 
 .content {
   position: relative;
+  width: 100%; /* Make the container full-width */
+  text-align: center; /* Center the text */
 }
 
 .content h2 {
   color: #fff;
-  font-size: 4em; /* Adjusted font size to fit better */
+  font-size: 5em; /* Adjusted font size to fit better */
   position: absolute;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .content h2:nth-child(1) {
@@ -67,7 +72,7 @@ body {
   }
 }
 
-/* Existing styles from your previous CSS */
+/* Your existing styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
@@ -156,15 +161,23 @@ html, body {
     margin-top: 20px; /* Add space above the image */
 }
 
-.introduction-container { display: flex; flex-direction: column; 
-                         align-items: center; 
-                         justify-content: center; /* Center content vertically */ min-height: 40vh;
-                         /* Adjust height as needed */ text-align: center; /* Center-align text within the container */
-                         margin: 0 auto; /* Center container horizontally */ 
-                         padding: 5px;
-                         /* Reduced padding for better readability */ } 
-.introduction { max-width: 800px; /* Limit the width for better readability */ 
-               color: #FAFAFA; /* Set text color to white */ 
-               font-size: 20px; /* Adjust font size for readability */
-               text-align: center; /* Center the text */
-               margin: 10px; /* Reduced margin for better spacing */ }
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 40vh; /* Adjust height as needed */
+    text-align: center; /* Center-align text within the container */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 5px; /* Reduced padding for better readability */
+}
+
+.introduction {
+    max-width: 800px; /* Limit the width for better readability */
+    color: #FAFAFA; /* Set text color to white */
+    font-size: 20px; /* Adjust font size for readability */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Reduced margin for better spacing */
+    font-weight: normal; /* Ensure normal font weight */
+}
+
