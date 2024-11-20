@@ -64,7 +64,7 @@ html, body {
     align-items: center;
     justify-content: center; /* Center content vertically */
     min-height: 30vh; /* Adjust height as needed */
-    margin-top: 70px; /* Space below the navbar */
+    margin-top: 20px; /* Space below the navbar */
     text-align: center; /* Center-align text within the container */
 }
 
