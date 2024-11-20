@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -19,13 +20,18 @@ body {
 .content {
   position: relative;
   text-align: center; /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .content h2 {
   color: #fff;
-  font-size: 3em; /* Adjusted font size to fit better */
+  font-size: 4em; /* Adjusted font size to fit better */
   position: relative;
-  display: inline-block; /* Ensure the text container shrinks to the text size */
+  margin: 0;
 }
 
 .content h2:nth-child(1) {
@@ -71,7 +77,7 @@ body {
 
 /* Your existing styles */
 html, body {
-     font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     background: #212121;
     height: 100%;
     margin: 0;
@@ -94,6 +100,7 @@ html, body {
     justify-content: space-between; /* Space between left and right sections */
     align-items: center; /* Vertically center the content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Mono', monospace; /* Set font to Roboto Mono */
 }
 
 .navbar-left {
@@ -166,15 +173,15 @@ html, body {
     min-height: 40vh; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
-    padding: 10px; /* Reduced padding for better readability */
+    padding: 5px; /* Set padding for better readability */
 }
 
 .introduction {
     max-width: 800px; /* Limit the width for better readability */
     color: #FAFAFA; /* Set text color to white */
-    font-size: 18px; /* Adjust font size for readability */
+    font-size: 20px; /* Adjust font size for readability */
     text-align: center; /* Center the text */
     margin: 10px; /* Reduced margin for better spacing */
     font-weight: normal; /* Ensure normal font weight */
-    font-family: 'Roboto Mono', monospace;/* Use a different font for introduction */
+    font-family: 'Roboto Mono', monospace; /* Set font to Roboto Mono */
 }
