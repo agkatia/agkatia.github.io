@@ -93,7 +93,7 @@ html, body {
                          justify-content: center; /* Center content vertically */ min-height: 40vh;
                          /* Adjust height as needed */ text-align: center; /* Center-align text within the container */
                          margin: 0 auto; /* Center container horizontally */ 
-                         padding: 10px;
+                         padding: 5px;
                          /* Reduced padding for better readability */ } 
 .introduction { max-width: 800px; /* Limit the width for better readability */ 
                color: #FAFAFA; /* Set text color to white */ 
