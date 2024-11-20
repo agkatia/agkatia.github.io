@@ -18,7 +18,6 @@ body {
 
 .content {
   position: relative;
-  width: 100%; /* Make the container full-width */
   text-align: center; /* Center the text */
 }
 
@@ -26,6 +25,7 @@ body {
   color: #fff;
   font-size: 3em; /* Adjusted font size to fit better */
   position: relative;
+  display: inline-block; /* Ensure the text container shrinks to the text size */
 }
 
 .content h2:nth-child(1) {
@@ -166,14 +166,15 @@ html, body {
     min-height: 40vh; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
-    padding: 5px; /* Reduced padding for better readability */
+    padding: 10px; /* Reduced padding for better readability */
 }
 
 .introduction {
     max-width: 800px; /* Limit the width for better readability */
     color: #FAFAFA; /* Set text color to white */
-    font-size: 20px; /* Adjust font size for readability */
+    font-size: 18px; /* Adjust font size for readability */
     text-align: center; /* Center the text */
     margin: 10px; /* Reduced margin for better spacing */
     font-weight: normal; /* Ensure normal font weight */
+    font-family: 'Roboto', sans-serif; /* Use a different font for introduction */
 }
