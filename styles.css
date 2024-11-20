@@ -95,7 +95,8 @@ html, body {
     justify-content: center; /* Center content vertically */
     min-height: 40vh; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
-    margin-top: 20px; /* Space above the introduction */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 20px; /* Add padding for better readability */
 }
 
 .introduction {
