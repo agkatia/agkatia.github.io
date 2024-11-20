@@ -32,9 +32,9 @@ html, body {
 }
 
 .flag {
-    width: 40px; /* Adjust the size of the flag */
+    width: 16px; /* Adjust the size of the flag */
     height: auto;
-    margin-right: 60px; /* Space between the flag and text */
+    margin-right: 8px; /* Space between the flag and text */
 }
 
 .navbar-left span {
@@ -58,12 +58,14 @@ html, body {
     color: black;
 }
 
-.container { display: flex; flex-direction: column; 
-            align-items: center;
-            justify-content: center; 
-            /* Center content vertically */ 
-            height: 100vh; /* Full viewport height */
-            text-align: center; /* Center-align text within the container */}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 50vh; /* Adjust height as needed */
+    text-align: center; /* Center-align text within the container */
+}
 
 .text {
     font-weight: 100;
@@ -72,22 +74,27 @@ html, body {
     margin-top: 20px;
 }
 
-.dud {
-    color: #757575;
+.profile-picture {
+    width: 150px; /* Adjust the size of the profile picture */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-top: 20px; /* Add space above the image */
 }
 
-.timeline {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 50vh; /* Adjust height as needed */
+    text-align: center; /* Center-align text within the container */
 }
-.introduction { margin-top: 40px; /* Add some space above the introduction */ 
-               max-width: 1000px; /* Limit the width for better readability */
-               color: #FAFAFA; /* Set text color to white */ 
-               font-size: 18px; /* Adjust font size for readability */
-               text-align: center; /* Center the text */  margin: 20px;}
 
+.introduction {
+    max-width: 600px; /* Limit the width for better readability */
+    color: #FAFAFA; /* Set text color to white */
+    font-size: 18px; /* Adjust font size for readability */
+    text-align: center; /* Center the text */
+    margin: 20px; /* Add margin around the introduction for some padding */
+}
