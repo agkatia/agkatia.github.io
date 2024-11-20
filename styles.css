@@ -86,8 +86,8 @@ html, body {
     margin-right: auto;
 }
 .introduction { margin-top: 40px; /* Add some space above the introduction */ 
-               max-width: 800px; /* Limit the width for better readability */
+               max-width: 600px; /* Limit the width for better readability */
                color: #FAFAFA; /* Set text color to white */ 
                font-size: 18px; /* Adjust font size for readability */
-               text-align: center; /* Center the text */ }
+               text-align: center; /* Center the text */  margin: 20px;}
 
