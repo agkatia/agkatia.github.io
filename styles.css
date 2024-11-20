@@ -156,21 +156,15 @@ html, body {
     margin-top: 20px; /* Add space above the image */
 }
 
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center content vertically */
-    min-height: 40vh; /* Adjust height as needed */
-    text-align: center; /* Center-align text within the container */
-    margin: 0 auto; /* Center container horizontally */
-    padding: 10px; /* Reduced padding for better readability */
-}
-
-.introduction {
-    max-width: 800px; /* Limit the width for better readability */
-    color: #FAFAFA; /* Set text color to white */
-    font-size: 18px; /* Adjust font size for readability */
-    text-align: center; /* Center the text */
-    margin: 10px; /* Reduced margin for better spacing */
-}
+.introduction-container { display: flex; flex-direction: column; 
+                         align-items: center; 
+                         justify-content: center; /* Center content vertically */ min-height: 40vh;
+                         /* Adjust height as needed */ text-align: center; /* Center-align text within the container */
+                         margin: 0 auto; /* Center container horizontally */ 
+                         padding: 5px;
+                         /* Reduced padding for better readability */ } 
+.introduction { max-width: 800px; /* Limit the width for better readability */ 
+               color: #FAFAFA; /* Set text color to white */ 
+               font-size: 20px; /* Adjust font size for readability */
+               text-align: center; /* Center the text */
+               margin: 10px; /* Reduced margin for better spacing */ }
