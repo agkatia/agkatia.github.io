@@ -3,7 +3,7 @@
 class TextScramble {
     constructor(el) {
         this.el = el;
-        this.chars = '!<>-________';
+        this.chars = '!________';
         this.update = this.update.bind(this);
     }
 
