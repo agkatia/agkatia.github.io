@@ -97,6 +97,6 @@ html, body {
                          /* Reduced padding for better readability */ } 
 .introduction { max-width: 800px; /* Limit the width for better readability */ 
                color: #FAFAFA; /* Set text color to white */ 
-               font-size: 25px; /* Adjust font size for readability */
+               font-size: 20px; /* Adjust font size for readability */
                text-align: center; /* Center the text */
                margin: 10px; /* Reduced margin for better spacing */ }
