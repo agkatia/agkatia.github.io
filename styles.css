@@ -78,7 +78,7 @@ html, body {
   text-decoration: none;
   letter-spacing: -3px;
   margin: 0;
-  position: relative;
+  position: relative; /* Use relative positioning */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -86,11 +86,11 @@ html, body {
 .orange-text:before,
 .orange-text:after {
   content: '';
-  padding: 1.5em 1em; /* Increased padding to make the rectangle bigger */
+  padding: .9em 1.4em; /* Longer rectangle without increasing height */
   position: absolute;
   left: 50%;
-  width: 100%;
   top: 50%;
+  width: auto;
   display: block;
   border: 15px solid red;
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
