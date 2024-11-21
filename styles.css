@@ -86,6 +86,9 @@ html, body {
     border-radius: 50%; /* Make it circular */
     object-fit: cover; /* Ensure the image covers the circle */
     margin-top: 20px; /* Add space above the image */
+     box-shadow:
+    -50px -50px 0 -40px var(--red),
+    50px 50px 0 -40px var(--red);
 }
 
 .introduction-container { display: flex; flex-direction: column; 
