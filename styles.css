@@ -100,3 +100,15 @@ html, body {
                font-size: 20px; /* Adjust font size for readability */
                text-align: center; /* Center the text */
                margin: 10px; /* Reduced margin for better spacing */ }
+:root {
+  --red: tomato;
+  --bgColor: bisque;
+}
+
+
+img.framed {
+  box-shadow:
+    -50px -50px 0 -40px var(--red),
+    50px 50px 0 -40px var(--red);
+}
+
