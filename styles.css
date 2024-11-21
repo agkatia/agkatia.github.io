@@ -78,7 +78,7 @@ html, body {
 .profile-picture-container {
     display: flex;
     justify-content: center; /* Center-align the image */
-    margin-bottom: 10px; /* Reduced space below the image */
+    margin-bottom: 5px; /* Reduced space below the image */
 }
 
 .profile-picture {
@@ -101,7 +101,9 @@ html, body {
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
     padding: 5px; /* Reduced padding for better readability */
+    margin-top: 5px; /* Reduced space above the introduction */
 }
+
 
 .introduction {
     max-width: 800px; /* Limit the width for better readability */
