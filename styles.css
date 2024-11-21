@@ -58,38 +58,58 @@ html, body {
     color: black;
 }
 
+/* Centered Text Container for ORANGE TEXT */
 .text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
     min-height: 30vh; /* Adjust height as needed */
-    margin-top: 20px; /* Space below the navbar */
+    margin: 80px 0 20px; /* Adjusted margins to position below navbar */
     text-align: center; /* Center-align text within the container */
 }
 
-.text {
-    font-weight: 100;
-    font-size: 28px;
-    color: #FAFAFA;
-    margin-top: 20px;
+.orange-text {
+  font-family: 'helvetica', 'arial', sans-serif; /* Different font for ORANGE TEXT */
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 60px; /* Adjusted size */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.orange-text:before,
+.orange-text:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 20s infinite alternate ease-in-out tipsy;
+}
+
+.orange-text:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.orange-text:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
 
 .profile-picture-container {
     display: flex;
     justify-content: center; /* Center-align the image */
     margin-bottom: 5px; /* Reduced space below the image */
-}
-
-.profile-picture {
-    width: 300px; /* Adjust the size of the profile picture */
-    height: 300px;
-    border-radius: 80%; /* Make it circular */
-    object-fit: cover; /* Ensure the image covers the circle */
-    margin-top: 20px; /* Add space above the image */
-    box-shadow:
-        -50px -50px 0 -40px var(--red),
-        50px 50px 0 -40px var(--red);
 }
 
 .introduction-container {
@@ -104,8 +124,8 @@ html, body {
     margin-top: 5px; /* Reduced space above the introduction */
 }
 
-
 .introduction {
+    font-family: 'Roboto Mono', monospace; /* Different font for introduction */
     max-width: 800px; /* Limit the width for better readability */
     color: #FAFAFA; /* Set text color to white */
     font-size: 20px; /* Adjust font size for readability */
@@ -118,7 +138,6 @@ html, body {
   --bgColor: bisque;
 }
 
-/*Orange text */
 @keyframes tipsy {
   0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -127,10 +146,3 @@ html, body {
     transform: translateX(-50%) translateY(-50%) rotate(180deg);
   }
 }
-
-body {
-  font-family: 'helvetica', 'arial', sans-serif;
-  background-color: #2e2e31;
-}
-
-/* General styles remain unchanged */ .orange-text { color: #fffbf1; text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; font-size: 60px; /* Adjusted size */ font-weight: bold; text-decoration: none; letter-spacing: -3px; margin: 0; position: relative; /* Changed to relative */ transform: translateX(-50%) translateY(-50%); } .orange-text:before, .orange-text:after { content: ''; padding: .9em .4em; position: absolute; left: 50%; width: 100%; top: 50%; display: block; border: 15px solid red; transform: translateX(-50%) translateY(-50%) rotate(0deg); animation: 20s infinite alternate ease-in-out tipsy; } .orange-text:before { border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); z-index: -1; } .orange-text:after { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a; box-shadow: 25px 25px 25px rgba(46, 46, 49, .8); }
