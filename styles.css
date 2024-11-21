@@ -133,40 +133,4 @@ body {
   background-color: #2e2e31;
 }
 
-a {
-  color: #fffbf1;
-  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 60px; /* Ensure the size is appropriate */
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: -3px;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-a:before,
-a:after {
-  content: '';
-  padding: .9em .4em;
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  top: 50%;
-  display: block;
-  border: 15px solid red;
-  transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 20s infinite alternate ease-in-out tipsy;
-}
-
-a:before {
-  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  z-index: -1;
-}
-
-a:after {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
-  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
-}
+/* General styles remain unchanged */ .orange-text { color: #fffbf1; text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; font-size: 60px; /* Adjusted size */ font-weight: bold; text-decoration: none; letter-spacing: -3px; margin: 0; position: relative; /* Changed to relative */ transform: translateX(-50%) translateY(-50%); } .orange-text:before, .orange-text:after { content: ''; padding: .9em .4em; position: absolute; left: 50%; width: 100%; top: 50%; display: block; border: 15px solid red; transform: translateX(-50%) translateY(-50%) rotate(0deg); animation: 20s infinite alternate ease-in-out tipsy; } .orange-text:before { border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); z-index: -1; } .orange-text:after { border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a; box-shadow: 25px 25px 25px rgba(46, 46, 49, .8); }
