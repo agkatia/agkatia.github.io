@@ -116,7 +116,7 @@ html, body {
   --bgColor: bisque;
 }
 
-/* Animation for ORANGE TEXT */
+/*Orange text */
 @keyframes tipsy {
   0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -134,12 +134,14 @@ body {
 a {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 60px; /* Adjusted size to be noticeable but not too large */
+  font-size: 60px; /* Ensure the size is appropriate */
   font-weight: bold;
   text-decoration: none;
   letter-spacing: -3px;
   margin: 0;
-  position: relative; /* Changed to relative to avoid overlap issues */
+  position: relative;
+  top: 50%;
+  left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
