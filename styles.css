@@ -70,7 +70,7 @@ html, body {
 }
 
 .orange-text {
-  font-family: 'helvetica', 'arial', sans-serif; /* Different font for ORANGE TEXT */
+  font-family: 'Helvetica', 'Arial', sans-serif; /* Different font for ORANGE TEXT */
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
   font-size: 60px; /* Adjusted size */
@@ -79,6 +79,7 @@ html, body {
   letter-spacing: -3px;
   margin: 0;
   position: relative;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -110,6 +111,17 @@ html, body {
     display: flex;
     justify-content: center; /* Center-align the image */
     margin-bottom: 5px; /* Reduced space below the image */
+}
+
+.profile-picture {
+    width: 300px; /* Adjust the size of the profile picture */
+    height: 300px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-top: 20px; /* Add space above the image */
+    box-shadow:
+        -50px -50px 0 -40px var(--red),
+        50px 50px 0 -40px var(--red); /* Add shadow to restore frame effect */
 }
 
 .introduction-container {
