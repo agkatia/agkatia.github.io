@@ -1,81 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  display: flex;
-  background: #000;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Prevents horizontal scroll */
-}
-
-.content {
-  position: relative;
-  text-align: center; /* Center the text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.content h2 {
-  color: #fff;
-  font-size: 4em; /* Adjusted font size to fit better */
-  position: relative;
-  margin: 0;
-}
-
-.content h2:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
-}
-
-.content h2:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 4s ease-in-out infinite;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
-
-  50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
-  }
-}
-
-/* Your existing styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
@@ -100,7 +24,6 @@ html, body {
     justify-content: space-between; /* Space between left and right sections */
     align-items: center; /* Vertically center the content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-family: 'Roboto Mono', monospace; /* Set font to Roboto Mono */
 }
 
 .navbar-left {
@@ -141,7 +64,7 @@ html, body {
     align-items: center;
     justify-content: center; /* Center content vertically */
     min-height: 30vh; /* Adjust height as needed */
-    margin-top: 20px; /* Reduced space below the navbar */
+    margin-top: 20px; /* Space below the navbar */
     text-align: center; /* Center-align text within the container */
 }
 
@@ -165,23 +88,15 @@ html, body {
     margin-top: 20px; /* Add space above the image */
 }
 
-.introduction-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center content vertically */
-    min-height: 40vh; /* Adjust height as needed */
-    text-align: center; /* Center-align text within the container */
-    margin: 0 auto; /* Center container horizontally */
-    padding: 5px; /* Set padding for better readability */
-}
-
-.introduction {
-    max-width: 800px; /* Limit the width for better readability */
-    color: #FAFAFA; /* Set text color to white */
-    font-size: 20px; /* Adjust font size for readability */
-    text-align: center; /* Center the text */
-    margin: 10px; /* Reduced margin for better spacing */
-    font-weight: normal; /* Ensure normal font weight */
-    font-family: 'Roboto Mono', monospace; /* Set font to Roboto Mono */
-}
+.introduction-container { display: flex; flex-direction: column; 
+                         align-items: center; 
+                         justify-content: center; /* Center content vertically */ min-height: 40vh;
+                         /* Adjust height as needed */ text-align: center; /* Center-align text within the container */
+                         margin: 0 auto; /* Center container horizontally */ 
+                         padding: 5px;
+                         /* Reduced padding for better readability */ } 
+.introduction { max-width: 800px; /* Limit the width for better readability */ 
+               color: #FAFAFA; /* Set text color to white */ 
+               font-size: 20px; /* Adjust font size for readability */
+               text-align: center; /* Center the text */
+               margin: 10px; /* Reduced margin for better spacing */ }
