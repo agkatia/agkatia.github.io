@@ -141,7 +141,7 @@ a:after {
   display: block;
   border: 15px solid red;
   transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s infinite alternate ease-in-out tipsy;
+  animation: 20s infinite alternate ease-in-out tipsy;
 }
 
 a:before {
