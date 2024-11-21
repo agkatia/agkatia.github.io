@@ -81,8 +81,8 @@ html, body {
 }
 
 .profile-picture {
-    width: 400px; /* Adjust the size of the profile picture */
-    height: 400px;
+    width: 300px; /* Adjust the size of the profile picture */
+    height: 300px;
     border-radius: 80%; /* Make it circular */
     object-fit: cover; /* Ensure the image covers the circle */
     margin-top: 20px; /* Add space above the image */
