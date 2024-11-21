@@ -32,7 +32,7 @@ html, body {
 }
 
 .flag {
-    width: 16px; /* Adjust the size of the flag */
+    width: 25px; /* Adjust the size of the flag */
     height: auto;
     margin-right: 8px; /* Space between the flag and text */
 }
