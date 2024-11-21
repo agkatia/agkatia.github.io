@@ -86,7 +86,7 @@ html, body {
 .orange-text:before,
 .orange-text:after {
   content: '';
-  padding: .9em .4em;
+  padding: 1.5em 1em; /* Increased padding to make the rectangle bigger */
   position: absolute;
   left: 50%;
   width: 100%;
