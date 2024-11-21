@@ -78,6 +78,7 @@ html, body {
 .profile-picture-container {
     display: flex;
     justify-content: center; /* Center-align the image */
+    margin-bottom: 10px; /* Reduced space below the image */
 }
 
 .profile-picture {
@@ -86,23 +87,30 @@ html, body {
     border-radius: 80%; /* Make it circular */
     object-fit: cover; /* Ensure the image covers the circle */
     margin-top: 20px; /* Add space above the image */
-     box-shadow:
-    -50px -50px 0 -40px var(--red),
-    50px 50px 0 -40px var(--red);
+    box-shadow:
+        -50px -50px 0 -40px var(--red),
+        50px 50px 0 -40px var(--red);
 }
 
-.introduction-container { display: flex; flex-direction: column; 
-                         align-items: center; 
-                         justify-content: center; /* Center content vertically */ min-height: 40vh;
-                         /* Adjust height as needed */ text-align: center; /* Center-align text within the container */
-                         margin: 0 auto; /* Center container horizontally */ 
-                         padding: 5px;
-                         /* Reduced padding for better readability */ } 
-.introduction { max-width: 800px; /* Limit the width for better readability */ 
-               color: #FAFAFA; /* Set text color to white */ 
-               font-size: 20px; /* Adjust font size for readability */
-               text-align: center; /* Center the text */
-               margin: 10px; /* Reduced margin for better spacing */ }
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 40vh; /* Adjust height as needed */
+    text-align: center; /* Center-align text within the container */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 5px; /* Reduced padding for better readability */
+}
+
+.introduction {
+    max-width: 800px; /* Limit the width for better readability */
+    color: #FAFAFA; /* Set text color to white */
+    font-size: 20px; /* Adjust font size for readability */
+    text-align: center; /* Center the text */
+    margin: 5px; /* Reduced margin for better spacing */
+}
+
 :root {
   --red: tomato;
   --bgColor: bisque;
@@ -116,6 +124,7 @@ html, body {
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
   }
 }
+
 a {
   color: #fffbf1;
   text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
@@ -146,4 +155,4 @@ a:after {
 
 a:before {
   border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  z
+}
