@@ -78,22 +78,23 @@ html, body {
   text-decoration: none;
   letter-spacing: -3px;
   margin: 0;
-  position: relative; /* Use relative positioning */
+  position: absolute; /* Changed to absolute */
+  top: 50%; /* Center vertically within text-container */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .orange-text:before,
 .orange-text:after {
   content: '';
-  padding: .9em 1.4em; /* Longer rectangle without increasing height */
+  padding: 1em 2em; /* Longer rectangle without increasing height */
   position: absolute;
   left: 50%;
   top: 50%;
   width: auto;
   display: block;
   border: 15px solid red;
-  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
   animation: 20s infinite alternate ease-in-out tipsy;
 }
 
