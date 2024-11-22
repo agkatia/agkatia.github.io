@@ -85,7 +85,7 @@ html, body {
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
     padding: 5px; /* Reduced padding for better readability */
-    margin-top: 0px; /* Reduced space above the introduction */
+    margin-top: -10px; /* Reduced space above the introduction */
 }
 
 .introduction {
@@ -108,7 +108,7 @@ html, body {
 }
 
 .wrapper {
-  margin-top: 40px;
+  margin-top: 30px;
   height: 30vh;
   width: auto;
   display: flex;
