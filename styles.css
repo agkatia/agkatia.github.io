@@ -81,7 +81,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
-    min-height: 30vh; /* Adjust height as needed */
+    min-height: 20vh; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
     padding: 5px; /* Reduced padding for better readability */
