@@ -145,7 +145,6 @@ html, body {
     text-align: center; /* Center the text */
     margin: 5px; /* Reduced margin for better spacing */
 }
-
 :root {
   --red: tomato;
   --bgColor: bisque;
