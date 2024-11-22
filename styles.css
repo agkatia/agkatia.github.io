@@ -59,18 +59,6 @@ html, body {
     color: black;
 }
 
-/* Centered Text Container for ORANGE TEXT */
-.text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center content vertically */
-    min-height: 30vh; /* Adjust height as needed */
-    margin: 80px 0 20px; /* Adjusted margins to position below navbar */
-    text-align: center; /* Center-align text within the container */
-}
-
-
 .profile-picture-container {
     display: flex;
     justify-content: center; /* Center-align the image */
@@ -78,8 +66,8 @@ html, body {
 }
 
 .profile-picture {
-    width: 300px; /* Adjust the size of the profile picture */
-    height: 300px;
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px;
     border-radius: 50%; /* Make it circular */
     object-fit: cover; /* Ensure the image covers the circle */
     margin-top: 20px; /* Add space above the image */
@@ -93,11 +81,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
-    min-height: 40vh; /* Adjust height as needed */
+    min-height: 30vh; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
     padding: 5px; /* Reduced padding for better readability */
-    margin-top: 5px; /* Reduced space above the introduction */
+    margin-top: 0px; /* Reduced space above the introduction */
 }
 
 .introduction {
@@ -108,7 +96,6 @@ html, body {
     text-align: center; /* Center the text */
     margin: 5px; /* Reduced margin for better spacing */
 }
-
 :root {
   --red: #4169E1;
   --bgColor: bisque;
@@ -122,7 +109,7 @@ html, body {
 
 .wrapper {
   margin-top: 20px;
-  height: 20vh;
+  height: 30vh;
   width: auto;
   display: flex;
   justify-content: center;
