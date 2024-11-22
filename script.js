@@ -1,82 +1,39 @@
-  // script.js
+const typedSpan = document.getElementById("typed")
+const totype = ["Fun", "Power", "Life"]
 
-class TextScramble {
-    constructor(el) {
-        this.el = el;
-        this.chars = '!________';
-        this.update = this.update.bind(this);
-    }
+const delayTyping_char = 200;
+const delayErasing_text = 150;
+const delayTyping_text = 3000;
 
-    setText(newText) {
-        const oldText = this.el.innerText;
-        const length = Math.max(oldText.length, newText.length);
-        const promise = new Promise((resolve) => this.resolve = resolve);
-        this.queue = [];
+let totypeIndex = 0;
+let charIndex = 0;
 
-        for (let i = 0; i < length; i++) {
-            const from = oldText[i] || '';
-            const to = newText[i] || '';
-            const start = Math.floor(Math.random() * 40);
-            const end = start + Math.floor(Math.random() * 40);
-            this.queue.push({ from, to, start, end });
-        }
-
-        cancelAnimationFrame(this.frameRequest);
-        this.frame = 0;
-        this.update();
-        return promise;
-    }
-
-    update() {
-        let output = '';
-        let complete = 0;
-
-        for (let i = 0, n = this.queue.length; i < n; i++) {
-            let { from, to, start, end, char } = this.queue[i];
-
-            if (this.frame >= end) {
-                complete++;
-                output += to;
-            } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.28) {
-                    char = this.randomChar();
-                    this.queue[i].char = char;
-                }
-                output += `<span class="dud">${char}</span>`;
-            } else {
-                output += from;
-            }
-        }
-
-        this.el.innerHTML = output;
-
-        if (complete === this.queue.length) {
-            this.resolve();
-        } else {
-            this.frameRequest = requestAnimationFrame(this.update);
-            this.frame++;
-        }
-    }
-
-    randomChar() {
-        return this.chars[Math.floor(Math.random() * this.chars.length)];
-    }
+function typeText() {
+	if (charIndex < totype[totypeIndex].length) {
+		typedSpan.textContent += totype[totypeIndex].charAt(charIndex);
+		charIndex++;
+		setTimeout(typeText, delayTyping_char);
+	}
+	else {
+		setTimeout(eraseText, delayTyping_text);
+	}
 }
 
-const phrases = [
-  'Hello World!',
-'Let\'s Connect!'
-];
+function eraseText() {
+	if (charIndex > 0) {
+		typedSpan.textContent = totype[totypeIndex].substring(0, charIndex-1);
+		charIndex = charIndex-1;
+		setTimeout(eraseText, delayErasing_text);
+	}
+	else {
+		totypeIndex++;
 
-const el = document.querySelector('.text');
-const fx = new TextScramble(el);
+		if (totypeIndex >= totype.length)
+			totypeIndex = 0;
+			setTimeout(typeText, delayTyping_text);
+	}
+}
 
-let counter = 0;
-const next = () => {
-    fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 5000); // Adjust speed if needed
-    });
-    counter = (counter + 1) % phrases.length;
-};
-
-next();
+window.onload = function() {
+	if (totype[totypeIndex].length) setTimeout(typeText, delayTyping_text);
+}
