@@ -70,45 +70,6 @@ html, body {
     text-align: center; /* Center-align text within the container */
 }
 
-.orange-text {
-  font-family: 'Helvetica', 'Arial', sans-serif; /* Different font for ORANGE TEXT */
-  color: #fffbf1;
-  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 60px; /* Adjusted size */
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: -3px;
-  margin: 0;
-  position: fixed; /* Changed to fixed */
-  top: 20%; /* Adjusted top position to avoid navbar overlap */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5; /* Ensure text is below navbar */
-}
-
-.orange-text:before,
-.orange-text:after {
-  content: '';
-  padding: 1em 3em; /* Adjusted horizontal padding for balanced size */
-  position: fixed; /* Changed to fixed */
-  left: 50%;
-  top: 20%; /* Adjusted top position to avoid navbar overlap */
-  width: auto;
-  display: block;
-  border: 15px solid red;
-  transform: translate(-50%, -50%) rotate(0deg);
-  animation: 20s infinite alternate ease-in-out tipsy;
-}
-
-.orange-text:before {
-  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  z-index: -1;
-}
-
-.orange-text:after {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
-  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
-}
 
 .profile-picture-container {
     display: flex;
@@ -149,15 +110,49 @@ html, body {
 }
 
 :root {
-  --red: tomato;
+  --red: #4169E1;
   --bgColor: bisque;
 }
 
-@keyframes tipsy {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(180deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-top: 20px;
+  height: 20vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-family: Serif;
+   color: #ffffff;
+   font-size: 20px; 
+}
+.effect-wrapper {
+  text-align: center;
+  font-weight: normal;
+}
+
+#typed {
+  font-weight: bold;
+  color: #4169E1;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #b0ff95;
+  animation: blinker 900ms infinite;
+}
+
+.cursor.typing-true {
+  animation: none;
+}
+
+@keyframes blinker {
+	0% { background-color: #4169E1; }
+	50% { background-color: transparent; }
+	100% { background-color: #4169E1; }
 }
