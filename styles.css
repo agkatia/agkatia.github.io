@@ -80,7 +80,7 @@ html, body {
   letter-spacing: -3px;
   margin: 0;
   position: fixed; /* Changed to fixed */
-  top: 25%; /* Adjusted top position to avoid navbar overlap */
+  top: 20%; /* Adjusted top position to avoid navbar overlap */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5; /* Ensure text is below navbar */
@@ -90,9 +90,9 @@ html, body {
 .orange-text:after {
   content: '';
   padding: 1em 3em; /* Adjusted horizontal padding for balanced size */
-  position: absolute;
+  position: fixed; /* Changed to fixed */
   left: 50%;
-  top: 50%;
+  top: 20%; /* Adjusted top position to avoid navbar overlap */
   width: auto;
   display: block;
   border: 15px solid red;
