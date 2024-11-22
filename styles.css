@@ -85,7 +85,7 @@ html, body {
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
     padding: 5px; /* Reduced padding for better readability */
-    margin-top: -10px; /* Reduced space above the introduction */
+    margin-top: -20px; /* Reduced space above the introduction */
 }
 
 .introduction {
