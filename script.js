@@ -64,7 +64,7 @@ class TextScramble {
 }
 
 const phrases = [
-  'Hey, I\'m Katia', 'A Business Intelligence Developer','Welcome to My Portfolio',
+  'Hello World!',
 'Let\'s Connect!'
 ];
 
