@@ -24,6 +24,7 @@ html, body {
     justify-content: space-between; /* Space between left and right sections */
     align-items: center; /* Vertically center the content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure navbar is above other elements */
 }
 
 .navbar-left {
@@ -69,7 +70,21 @@ html, body {
     text-align: center; /* Center-align text within the container */
 }
 
-.orange-text { font-family: 'Helvetica', 'Arial', sans-serif; /* Different font for ORANGE TEXT */ color: #fffbf1; text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31; font-size: 60px; /* Adjusted size */ font-weight: bold; text-decoration: none; letter-spacing: -3px; margin: 0; position: fixed; /* Changed to fixed */ top: 20%; /* Adjust as needed to position above the introduction */ left: 50%; transform: translate(-50%, -50%); }
+.orange-text {
+  font-family: 'Helvetica', 'Arial', sans-serif; /* Different font for ORANGE TEXT */
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 60px; /* Adjusted size */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: fixed; /* Changed to fixed */
+  top: 25%; /* Adjusted top position to avoid navbar overlap */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; /* Ensure text is below navbar */
+}
 
 .orange-text:before,
 .orange-text:after {
@@ -132,6 +147,7 @@ html, body {
     text-align: center; /* Center the text */
     margin: 5px; /* Reduced margin for better spacing */
 }
+
 :root {
   --red: tomato;
   --bgColor: bisque;
