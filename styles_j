@@ -1,0 +1,150 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 14px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center the content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure navbar is above other elements */
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 25px; /* Adjust the size of the flag */
+    height: auto;
+    margin-right: 20px; /* Space between the flag and text */
+}
+
+.navbar-left span {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.navbar-right a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.navbar-right a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center; /* Center-align the image */
+    margin-bottom: 5px; /* Reduced space below the image */
+}
+
+.profile-picture {
+    width: 300px; /* Adjust the size of the profile picture */
+    height: 300px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the circle */
+    margin-top: 20px; /* Add space above the image */
+    box-shadow:
+        -50px -50px 0 -40px var(--red),
+        50px 50px 0 -40px var(--red); /* Add shadow to restore frame effect */
+}
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 20vh; /* Adjust height as needed */
+    text-align: center; /* Center-align text within the container */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 5px; /* Reduced padding for better readability */
+    margin-top: -20px; /* Reduced space above the introduction */
+}
+
+.introduction {
+    font-family: 'Roboto Mono', monospace; /* Different font for introduction */
+    max-width: 800px; /* Limit the width for better readability */
+    color: #FAFAFA; /* Set text color to white */
+    font-size: 20px; /* Adjust font size for readability */
+    text-align: center; /* Center the text */
+    margin: 5px; /* Reduced margin for better spacing */
+}
+:root {
+  --red: #4169E1;
+  --bgColor: bisque;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-top: 30px;
+  height: 30vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-family: 'Roboto Slab', serif;
+   color: #ffffff;
+   font-size: 20px; 
+}
+.effect-wrapper {
+  text-align: center;
+  font-weight: normal;
+}
+
+#typed {
+  font-weight: bold;
+  color: #4169E1;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #b0ff95;
+  animation: blinker 900ms infinite;
+}
+
+.cursor.typing-true {
+  animation: none;
+}
+@keyframes blinker {
+	0% { background-color: #4169E1; }
+	50% { background-color: transparent; }
+	100% { background-color: #4169E1; }
+}
+/* Define a custom class for extra bold text */
+.extra-bold { font-family: 'Montserrat', sans-serif;
+}
