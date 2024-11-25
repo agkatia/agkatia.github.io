@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
+/* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
@@ -16,7 +16,6 @@ html, body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
 
 /* Navbar styling */
 .navbar {
@@ -71,19 +70,32 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 80px; /* Increased space below navbar */
     text-align: center;
 }
 
-.text {
-    margin-bottom: 20px;
-    color: #FAFAFA;
-    font-family: 'Roboto Mono', monospace;
+.introduction-frame {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient from dark blue to a lighter blue */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin-bottom: 40px; /* Space below introduction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%; /* Optional: make avatar circular */
 }
 
 .timeline {
     max-width: 80%;
     height: auto;
-    margin-top: 100px; /* Increase space above the image */
-    margin-bottom: 50px; /* Optional: Add space below the image for better visual separation */
+    margin-top: 50px; /* Add space above the image */
 }
