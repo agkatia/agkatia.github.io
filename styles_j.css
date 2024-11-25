@@ -89,9 +89,13 @@ html, body {
     align-items: center;
 }
 
+.intro-content p {
+    font-size: 18px; /* Increase font size for the introduction text */
+}
+
 .avatar {
-    width: auto; /* Adjust size to maintain aspect ratio */
-    height: 200px; /* Set height to ensure the entire avatar is visible */
+    width: auto;
+    height: 150px; /* Reduced size of the avatar while keeping edges visible */
     margin-right: 20px;
     border-radius: 15px; /* Optional: make avatar circular */
 }
