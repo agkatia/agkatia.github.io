@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 /* General Styles */
+/* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
@@ -70,7 +71,7 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 80px; /* Increased space below navbar */
+    padding-top: 100px; /* Increased space below navbar */
     text-align: center;
 }
 
@@ -78,8 +79,9 @@ html, body {
     background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient from dark blue to a lighter blue */
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
-    margin-bottom: 40px; /* Space below introduction */
+    margin: 20px 0 40px; /* Added space above and below introduction */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    max-width: 60%; /* Center and narrow the frame */
 }
 
 .intro-content {
@@ -88,7 +90,7 @@ html, body {
 }
 
 .avatar {
-    width: 100px; /* Adjust size as needed */
+    width: 150px; /* Increased size of the avatar */
     height: auto;
     margin-right: 20px;
     border-radius: 50%; /* Optional: make avatar circular */
