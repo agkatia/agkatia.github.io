@@ -90,10 +90,10 @@ html, body {
 }
 
 .avatar {
-    width: 150px; /* Increased size of the avatar */
-    height: auto;
+    width: auto; /* Adjust size to maintain aspect ratio */
+    height: 200px; /* Set height to ensure the entire avatar is visible */
     margin-right: 20px;
-    border-radius: 50%; /* Optional: make avatar circular */
+    border-radius: 15px; /* Optional: make avatar circular */
 }
 
 .timeline {
