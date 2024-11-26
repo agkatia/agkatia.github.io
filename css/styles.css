@@ -16,7 +16,6 @@ html, body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
-
 .navbar {
     background-color: #333;
     padding: 14px 16px;
