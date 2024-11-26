@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
+/* General Styles */
 /* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
-    color: #FAFAFA;
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
     box-sizing: border-box;
 }
 
@@ -90,7 +90,7 @@ html, body {
 }
 
 .university-logo, .project-logo {
-    width: 100px;
+    width: 50px;
     height: auto;
     margin-bottom: 10px;
 }
