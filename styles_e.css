@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-/* General Styles */
+
 /* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
+    color: #FAFAFA;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
     box-sizing: border-box;
 }
 
@@ -71,38 +71,36 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding-top: 100px; /* Increased space below navbar */
+    padding-top: 80px; /* Increased space below navbar */
     text-align: center;
 }
 
-.introduction-frame {
-    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient from dark blue to a lighter blue */
+.education-section, .graduation-project {
+    max-width: 800px;
+    width: 100%;
     padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px 0 40px; /* Added space above and below introduction */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
-    max-width: 60%; /* Center and narrow the frame */
+    margin: 20px 0;
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.intro-content {
-    display: flex;
-    align-items: center;
+.university, .education-details, .project {
+    text-align: left;
 }
 
-.intro-content p {
-    font-size: 18px; /* Increase font size for the introduction text */
-}
-
-.avatar {
-    width: auto;
-    height: 150px; /* Reduced size of the avatar while keeping edges visible */
-    margin-right: 20px;
-    border-radius: 15px; /* Optional: make avatar circular */
-}
-
-.timeline {
-    max-width: 80%;
+.university-logo, .project-logo {
+    width: 100px;
     height: auto;
-    margin-top: 50px; /* Add space above the image */
+    margin-bottom: 10px;
+}
+
+.education-image, .project-screenshot {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.final-dissertation {
+    margin-top: 20px;
 }
