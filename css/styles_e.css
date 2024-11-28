@@ -83,21 +83,42 @@ html, body {
 }
 
 .university, .education-details, .project {
-    text-align: left;
+    text-align: center; /* Center align the text */
 }
 
 .university-logo, .project-logo {
-    width: 50px;
+    width: 100px; /* Increase the size of the logo */
     height: auto;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .education-image, .project-screenshot {
-    width: 100%;
+    width: 50%; /* Reduce the size of the images to 50% of their container */
     height: auto;
     margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .final-dissertation {
     margin-top: 20px;
+}
+
+.highlight {
+    font-weight: 900; /* Make the word 'HERE' bolder */
+    text-decoration: underline; /* Keep the underline */
+}
+
+/* Additional styling for CASNOS logo */
+.casnos-logo {
+    width: 100px; /* Increase the size of the CASNOS logo */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
