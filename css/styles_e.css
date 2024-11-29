@@ -145,7 +145,7 @@ html, body {
 .project-images {
     display: flex;
     justify-content: space-between; /* Arrange images in a row with space between */
-    gap: 5px; /* Add space between images */
+    gap: 2px; /* Add space between images */
 }
 
 .project-screenshot {
