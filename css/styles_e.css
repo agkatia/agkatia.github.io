@@ -121,7 +121,7 @@ html, body {
 
 .education-image, .project-screenshot {
     flex: 1;
-    max-width: 40%; /* Ensure both images have the same width */
+    max-width: 300px; /* Ensure both images have the same width */
     height: auto;
     margin-top: 10px;
     display: block;
