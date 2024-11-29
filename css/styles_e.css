@@ -73,7 +73,7 @@ html, body {
 }
 
 .education-section, .graduation-project {
-    max-width: 800px;
+    max-width: 1100px;
     width: 100%;
     padding: 20px;
     margin: 20px 0;
@@ -82,21 +82,34 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.university, .education-details, .project {
-    text-align: center; /* Center align the text */
+/* Flex container styling */
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.education-details, .project {
+    text-align: left;
 }
 
 .university-logo, .project-logo {
-    width: 100px; /* Increase the size of the logo */
-    height: auto;
+    width: 150px; /* Increase the size of the logo */
+    height: 150px;
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%; /* Make the logo circular */
 }
 
 .education-image, .project-screenshot {
-    width: 50%; /* Reduce the size of the images to 50% of their container */
+    flex: 1;
+    max-width: 50%; /* Reduce the size of the images */
     height: auto;
     margin-top: 10px;
     display: block;
@@ -115,10 +128,11 @@ html, body {
 
 /* Additional styling for CASNOS logo */
 .casnos-logo {
-    width: 100px; /* Increase the size of the CASNOS logo */
-    height: auto;
+    width: 150px; /* Increase the size of the CASNOS logo */
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    border-radius: 50%; /* Make the logo circular */
 }
