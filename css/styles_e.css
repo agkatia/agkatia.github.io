@@ -70,13 +70,14 @@ html, body {
     justify-content: center;
     padding-top: 80px; /* Increased space below navbar */
     text-align: center;
+    padding: 40px; /* Increase padding for bigger frame */
 }
 
 .education-section, .graduation-project {
-    max-width: 1100px;
+    max-width: 1100px; /* Increase max-width for bigger frame */
     width: 100%;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 30px 0; /* Increase margin for better spacing */
     background: #333;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -85,12 +86,14 @@ html, body {
 /* Flex container styling */
 .flex-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between items */
 }
 
 .text-content {
     flex: 1;
     text-align: left;
+    margin-right: 20px; /* Add space between text and image */
 }
 
 .education-details, .project {
@@ -98,18 +101,18 @@ html, body {
 }
 
 .university-logo, .project-logo {
-    width: 150px; /* Increase the size of the logo */
-    height: 150px;
+    width: 200px; /* Increase the size of the logo */
+    height: 200px;
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%; /* Make the logo circular */
+    border-radius: 15px; /* Make the logo rounded square */
 }
 
 .education-image, .project-screenshot {
     flex: 1;
-    max-width: 50%; /* Reduce the size of the images */
+    max-width: 40%; /* Adjust the size of the images */
     height: auto;
     margin-top: 10px;
     display: block;
@@ -124,15 +127,4 @@ html, body {
 .highlight {
     font-weight: 900; /* Make the word 'HERE' bolder */
     text-decoration: underline; /* Keep the underline */
-}
-
-/* Additional styling for CASNOS logo */
-.casnos-logo {
-    width: 150px; /* Increase the size of the CASNOS logo */
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 50%; /* Make the logo circular */
 }
