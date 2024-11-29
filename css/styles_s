@@ -1,0 +1,107 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+/* General Styles */
+/* General Styles */
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 14px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-left span {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.navbar-right a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.navbar-right a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Increased space below navbar */
+    text-align: center;
+}
+
+.introduction-frame {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient from dark blue to a lighter blue */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px 0 40px; /* Added space above and below introduction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    max-width: 60%; /* Center and narrow the frame */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-content p {
+    font-size: 18px; /* Increase font size for the introduction text */
+}
+
+.avatar {
+    width: auto;
+    height: 150px; /* Reduced size of the avatar while keeping edges visible */
+    margin-right: 20px;
+    border-radius: 15px; /* Optional: make avatar circular */
+}
+
+.timeline {
+    max-width: 80%;
+    height: auto;
+    margin-top: 50px; /* Add space above the image */
+}
