@@ -73,11 +73,20 @@ html, body {
     padding: 40px; /* Increase padding for bigger frame */
 }
 
-.education-section, .graduation-project {
+.education-section {
     max-width: 1100px; /* Increase max-width for bigger frame */
     width: 100%;
     padding: 30px; /* Increase padding for bigger frame */
-    margin: 30px 0; /* Increase margin for better spacing */
+    margin: 80px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.graduation-project {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 10px 0; /* Increase margin for better spacing */
     background: #333;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -101,8 +110,8 @@ html, body {
 }
 
 .university-logo, .project-logo {
-    width: 200px; /* Increase the size of the logo */
-    height: 200px;
+    width: 150px; /* Adjust the size of the logos */
+    height: 150px;
     margin-bottom: 10px;
     display: block;
     margin-left: auto;
@@ -112,7 +121,7 @@ html, body {
 
 .education-image, .project-screenshot {
     flex: 1;
-    max-width: 40%; /* Adjust the size of the images */
+    max-width: 40%; /* Ensure both images have the same width */
     height: auto;
     margin-top: 10px;
     display: block;
@@ -125,6 +134,4 @@ html, body {
 }
 
 .highlight {
-    font-weight: 900; /* Make the word 'HERE' bolder */
-    text-decoration: underline; /* Keep the underline */
-}
+    font-weight: 900; /* Make
