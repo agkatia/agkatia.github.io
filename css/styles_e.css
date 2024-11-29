@@ -122,6 +122,7 @@ html, body {
 .education-image, .project-screenshot {
     flex: 1;
     max-width: 300px; /* Ensure both images have the same width */
+    height: 200px; /* Set the exact height */
     height: auto;
     margin-top: 10px;
     display: block;
