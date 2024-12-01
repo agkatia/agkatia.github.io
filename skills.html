@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOUDJIL KATIA - My Journey</title>
     <link rel="stylesheet" href="/css/styles_s.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -29,29 +30,114 @@
             </div>
         </div>  
        
-      <!-- Charts container -->
-      <div class="charts-wrapper">
-        <!-- Embedded pie chart -->
-        <div class="chart-container">
-            <div style="min-height:547px" id="datawrapper-vis-JNfPd">
-                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/JNfPd/embed.js" charset="utf-8" data-target="#datawrapper-vis-JNfPd"></script>
-                <noscript>
-                    <img src="https://datawrapper.dwcdn.net/JNfPd/full.png" alt="A pie chart showing my years of experience with different database technologies" />
-                </noscript>
+        <!-- Charts container -->
+        <div class="charts-wrapper">
+            <!-- Embedded pie chart -->
+            <div class="chart-container small-chart">
+                <div style="min-height:547px" id="datawrapper-vis-JNfPd">
+                    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/JNfPd/embed.js" charset="utf-8" data-target="#datawrapper-vis-JNfPd"></script>
+                    <noscript>
+                        <img src="https://datawrapper.dwcdn.net/JNfPd/full.png" alt="A pie chart showing my years of experience with different database technologies" />
+                    </noscript>
+                </div>
+            </div>
+
+            <!-- Embedded bar chart -->
+            <div class="chart-container small-chart">
+                <div style="min-height:476px" id="datawrapper-vis-v0yWX">
+                    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/v0yWX/embed.js" charset="utf-8" data-target="#datawrapper-vis-v0yWX"></script>
+                    <noscript>
+                        <img src="https://datawrapper.dwcdn.net/v0yWX/full.png" alt="A bar chart showing proficiency levels in different BI tools" />
+                    </noscript>
+                </div>
+            </div>
+
+            <!-- Embedded Election Donut -->
+            <div class="chart-container small-chart">
+                <div style="min-height:527px" id="datawrapper-vis-8mWM3">
+                    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8mWM3/embed.js" charset="utf-8" data-target="#datawrapper-vis-8mWM3"></script>
+                    <noscript>
+                        <img src="https://datawrapper.dwcdn.net/8mWM3/full.png" alt="An Election Donut showing proficiency levels in coding technologies" />
+                    </noscript>
+                </div>
             </div>
         </div>
-        
-        <!-- Embedded bar chart -->
-        <div class="chart-container">
-            <div style="min-height:476px" id="datawrapper-vis-v0yWX">
-                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/v0yWX/embed.js" charset="utf-8" data-target="#datawrapper-vis-v0yWX"></script>
-                <noscript>
-                    <img src="https://datawrapper.dwcdn.net/v0yWX/full.png" alt="A bar chart showing proficiency levels in different BI tools" />
-                </noscript>
+
+        <!-- Donut and Radar Charts Container -->
+        <div class="charts-wrapper">
+            <!-- Donut Chart -->
+            <div class="chart-container ntsmall-chart">
+                <div style="min-height:527px" id="datawrapper-vis-gv9hq">
+                    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gv9hq/embed.js" charset="utf-8" data-target="#datawrapper-vis-gv9hq"></script>
+                    <noscript>
+                        <img src="https://datawrapper.dwcdn.net/gv9hq/full.png" alt="Years of experience with various Open Source and Operation Tools" />
+                    </noscript>
+                </div>
             </div>
-        </div>
-      </div>
-      
-    </div>
+
+          
+            <!-- Radar Chart for Soft Skills -->
+            <div class="chart-container ntsmall-chart">
+   <canvas id="softSkillsRadarChart"></canvas> </div> </div> </div> <script>
+  const ctx = document.getElementById('softSkillsRadarChart').getContext('2d');
+const softSkillsRadarChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ['Communication', 'Teamwork', 'Technical Writing', 'Problem-solving', 'Creativity', 'Flexibility', 'Mentoring', 'Public Speaking'],
+        datasets: [{
+            label: 'Proficiency Level',
+            data: [9, 8, 7, 8, 7, 8, 8, 8],
+            backgroundColor: 'rgba(0, 82, 113, 0.2)', // #005271 in RGBA format
+            borderColor: 'rgba(0, 82, 113, 1)',       // #005271 in RGBA format
+            borderWidth: 2, // Increased border width for visibility
+            pointBackgroundColor: 'rgba(0, 82, 113, 1)', // #005271 in RGBA format
+            pointBorderColor: 'rgba(0, 82, 113, 1)',     // #005271 in RGBA format
+            pointRadius: 6, // Make points even bigger
+            pointHoverRadius: 8 // Make points more visible on hover
+        }]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Soft Skills',
+                align: 'start', // Align the title to the left
+                font: {
+                    size: 20,
+                    weight: 'bold'
+                },
+                color: 'black' // Set the title color to black
+            },
+            subtitle: { // Adding the description as a subtitle
+                display: true,
+                text: 'This radar chart showcases my proficiency levels in various soft skills',
+                align: 'start', // Align the subtitle to the left
+                font: {
+                    size: 14,
+                    weight: 'normal'
+                },
+                color: 'black'  // Dark text color for readability
+            }
+        },
+        scales: {
+            r: {
+                angleLines: {
+                    display: false
+                },
+                suggestedMin: 0,
+                suggestedMax: 10,
+                pointLabels: {
+                    font: {
+                        size: 14,
+                        weight: 'bold' // Make labels bold
+                    }
+                }
+            }
+        }
+    }
+});
+
+  </script>  
+       
 </body>
 </html>
