@@ -71,40 +71,11 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 100px; /* Increased space below navbar */
+     padding-top: 200px; /* Increased space below navbar */
     text-align: center;
+  
 }
 
-.introduction-frame {
-    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient from dark blue to a lighter blue */
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
-    margin: 20px 0 40px; /* Added space above and below introduction */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
-    max-width: 60%; /* Center and narrow the frame */
-}
-
-.intro-content {
-    display: flex;
-    align-items: center;
-}
-
-.intro-content p {
-    font-size: 18px; /* Increase font size for the introduction text */
-}
-
-.avatar {
-    width: auto;
-    height: 150px; /* Reduced size of the avatar while keeping edges visible */
-    margin-right: 20px;
-    border-radius: 15px; /* Optional: make avatar circular */
-}
-
-.timeline {
-    max-width: 80%;
-    height: auto;
-    margin-top: 50px; /* Add space above the image */
-}
 
 /* Charts container styling */
 .charts-wrapper {
@@ -112,6 +83,7 @@ html, body {
     justify-content: space-around; /* Spacing around charts */
     width: 100%;
     margin: 20px 0; /* Space between charts */
+   padding: 10px;
 }
 
 .chart-container {
