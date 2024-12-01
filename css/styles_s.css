@@ -1,9 +1,9 @@
+/* General Styles */
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
-/* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
@@ -109,8 +109,8 @@ html, body {
 /* Charts container styling */
 .charts-wrapper {
     display: flex;
-    justify-content: center;
-    width: 90%;
+    justify-content: space-around; /* Spacing around charts */
+    width: 100%;
     margin: 20px 0; /* Space between charts */
 }
 
@@ -118,6 +118,15 @@ html, body {
     background-color: #fff; /* White background for charts */
     padding: 10px;
     border-radius: 10px;
-    margin: 0 10px; /* Space between the two charts */
+    margin: 0 10px; /* Space between the charts */
     flex: 1; /* Ensures the charts take up equal width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
+
+.small-chart {
+    flex: 0 0 30%; /* Smaller size for each chart to fit two in a row */
+}
+
+.ntsmall-chart {
+    flex: 0 0 40%; /* Smaller size for each chart to fit two in a row */
 }
