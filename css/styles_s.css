@@ -71,9 +71,8 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-     padding-top: 200px; /* Increased space below navbar */
+    padding-top: 100px; /* Increased space below navbar */
     text-align: center;
-  
 }
 
 
