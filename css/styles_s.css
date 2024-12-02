@@ -71,18 +71,16 @@ html, body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding-top: 100px; /* Increased space below navbar */
     text-align: center;
 }
-
 
 /* Charts container styling */
 .charts-wrapper {
     display: flex;
     justify-content: space-around; /* Spacing around charts */
     width: 100%;
-    margin: 20px 0; /* Space between charts */
-   padding: 10px;
+    margin: 60px 0; /* Increased space between navbar and charts */
+    padding: 10px;
 }
 
 .chart-container {
