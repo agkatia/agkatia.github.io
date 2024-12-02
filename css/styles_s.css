@@ -82,7 +82,13 @@ html, body {
     margin-top: 100px; /* Significant space between navbar and charts */
     padding: 10px;
 }
-
+.ncharts-wrapper {
+    display: flex;
+    justify-content: space-around; /* Spacing around charts */
+    width: 100%;
+    margin-top: 50px; /* Significant space between navbar and charts */
+    padding: 10px;
+}
 .chart-container {
     background-color: #fff; /* White background for charts */
     padding: 10px;
