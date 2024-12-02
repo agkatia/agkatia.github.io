@@ -79,7 +79,7 @@ html, body {
     display: flex;
     justify-content: space-around; /* Spacing around charts */
     width: 100%;
-    margin-top: 200px; /* Significant space between navbar and charts */
+    margin-top: 400px; /* Significant space between navbar and charts */
     padding: 10px;
 }
 
