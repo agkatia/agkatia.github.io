@@ -48,6 +48,7 @@ html, body {
     font-size: 16px;
 }
 
+/* Navbar links */
 .navbar-right a {
     display: inline-block;
     color: #f2f2f2;
@@ -59,10 +60,11 @@ html, body {
     font-size: 16px;
 }
 
-.navbar-right a:hover {
+.navbar-right a:hover, .navbar-right a.active {
     background-color: #ddd;
     color: black;
 }
+
 
 /* Main container styling */
 .container {
