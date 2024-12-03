@@ -98,10 +98,18 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
 
+.nchart-container {
+    background-color: #fff; /* White background for charts */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px; /* Space between the charts */
+    flex: 1; /* Ensures the charts take up equal width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+}
 .small-chart {
     flex: 0 0 30%; /* Smaller size for each chart to fit two in a row */
 }
 
 .ntsmall-chart {
-    flex: 0 0 40%; /* Smaller size for each chart to fit two in a row */
+    flex: 0 0 30%;/* Smaller size for each chart to fit two in a row */
 }
