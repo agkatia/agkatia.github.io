@@ -23,101 +23,115 @@
         </div>
     </nav>
        
-        <!-- Charts container -->
-        <div class="charts-wrapper">
-            <!-- Embedded pie chart -->
-            <div class="chart-container small-chart">
-            <div style="min-height:610px" id="datawrapper-vis-OlnEv"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/OlnEv/embed.js" charset="utf-8" data-target="#datawrapper-vis-OlnEv"></script><noscript><img src="https://datawrapper.dwcdn.net/OlnEv/full.png" alt="A pie chart showing my years of experience with different database technologies" /></noscript></div>
-            </div>
-
-            <!-- Embedded bar chart -->
-            <div class="chart-container small-chart">
-         <div style="min-height:538px" id="datawrapper-vis-v0yWX"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/v0yWX/embed.js" charset="utf-8" data-target="#datawrapper-vis-v0yWX"></script><noscript><img src="https://datawrapper.dwcdn.net/v0yWX/full.png" alt="A bar chart showing proficiency levels in different BI tools" /></noscript></div>
-            </div>
-
-            <!-- Embedded Election Donut -->
-            <div class="chart-container small-chart">
-                <div style="min-height:527px" id="datawrapper-vis-8mWM3">
-                    <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8mWM3/embed.js" charset="utf-8" data-target="#datawrapper-vis-8mWM3"></script>
-                    <noscript>
-                        <img src="https://datawrapper.dwcdn.net/8mWM3/full.png" alt="An Election Donut showing proficiency levels in coding technologies" />
-                    </noscript>
-                </div>
+    <!-- Charts container -->
+    <div class="charts-wrapper">
+        <!-- Embedded pie chart -->
+        <div class="chart-container small-chart">
+            <div style="min-height:610px" id="datawrapper-vis-OlnEv">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/OlnEv/embed.js" charset="utf-8" data-target="#datawrapper-vis-OlnEv"></script>
+                <noscript><img src="https://datawrapper.dwcdn.net/OlnEv/full.png" alt="A pie chart showing my years of experience with different database technologies" /></noscript>
             </div>
         </div>
 
-        <!-- Donut and Radar Charts Container -->
-        <div class="ncharts-wrapper">
-            <!-- Donut Chart -->
-            <div class="chart-container ntsmall-chart">
-               <div style="min-height:555px" id="datawrapper-vis-gv9hq">
-                   <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gv9hq/embed.js" charset="utf-8" data-target="#datawrapper-vis-gv9hq"></script><noscript>
-                   <img src="https://datawrapper.dwcdn.net/gv9hq/full.png" alt="Years of experience with various Open Source and Operation Tools" /></noscript></div>
+        <!-- Embedded bar chart -->
+        <div class="chart-container small-chart">
+            <div style="min-height:538px" id="datawrapper-vis-v0yWX">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/v0yWX/embed.js" charset="utf-8" data-target="#datawrapper-vis-v0yWX"></script>
+                <noscript><img src="https://datawrapper.dwcdn.net/v0yWX/full.png" alt="A bar chart showing proficiency levels in different BI tools" /></noscript>
             </div>
+        </div>
 
-          
-            <!-- Radar Chart for Soft Skills -->
-            <div class="chart-container ntsmall-chart">
-   <canvas id="softSkillsRadarChart"></canvas> </div> </div> </div> <script>
-  const ctx = document.getElementById('softSkillsRadarChart').getContext('2d');
-const softSkillsRadarChart = new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ['Communication', 'Teamwork', 'Technical Writing', 'Problem-solving', 'Creativity', 'Flexibility', 'Mentoring', 'Public Speaking'],
-        datasets: [{
-            label: 'Proficiency Level',
-            data: [9, 8, 7, 8, 7, 8, 8, 8],
-            backgroundColor: 'rgba(11, 123, 165, 0.2)', // #005271 in RGBA format
-            borderColor: 'rgba(11, 123, 165, 1)',       // #005271 in RGBA format
-            borderWidth: 2, // Increased border width for visibility
-            pointBackgroundColor: 'rgba(11, 123, 165, 1)', // #005271 in RGBA format
-            pointBorderColor: 'rgba(11, 123, 165, 1)',     // #005271 in RGBA format
-            pointRadius: 6, // Make points even bigger
-            pointHoverRadius: 8 // Make points more visible on hover
-        }]
-    },
-    options: {
-        plugins: {
-            title: {
-                display: true,
-                text: 'Soft Skills',
-                align: 'start', // Align the title to the left
-                font: {
-                    size: 20,
-                    weight: 'bold'
-                },
-                color: 'black' // Set the title color to black
+        <!-- Embedded Election Donut -->
+        <div class="chart-container small-chart">
+            <div style="min-height:527px" id="datawrapper-vis-8mWM3">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8mWM3/embed.js" charset="utf-8" data-target="#datawrapper-vis-8mWM3"></script>
+                <noscript>
+                    <img src="https://datawrapper.dwcdn.net/8mWM3/full.png" alt="An Election Donut showing proficiency levels in coding technologies" />
+                </noscript>
+            </div>
+        </div>
+    </div>
+    <!-- Donut and Radar Charts Container -->
+    <div class="ncharts-wrapper">
+        <!-- Donut Chart for Open Source -->
+        <div class="nchart-container ntsmall-chart">
+            <div style="min-height:555px" id="datawrapper-vis-gv9hq">
+ <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/gv9hq/embed.js" charset="utf-8" data-target="#datawrapper-vis-gv9hq"></script>
+                <noscript>
+                    <img src="https://datawrapper.dwcdn.net/gv9hq/full.png" alt="Years of experience with various Open Source and Operation Tools" />
+                </noscript>
+            </div>
+        </div>
+        <!-- Radar Chart for Soft Skills -->
+        <div class="nchart-container ntsmall-chart">
+            <canvas id="softSkillsRadarChart"></canvas>
+        </div>
+        <!-- Language Proficiency Chart -->
+        <div class="nchart-container ntsmall-chart">
+            <div style="min-height:349px" id="datawrapper-vis-nxrSq">
+                <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/nxrSq/embed.js" charset="utf-8" data-target="#datawrapper-vis-nxrSq"></script>
+                <noscript><img src="https://datawrapper.dwcdn.net/nxrSq/full.png" alt="My levels of fluency in different languages." /></noscript>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('softSkillsRadarChart').getContext('2d');
+        const softSkillsRadarChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Communication', 'Teamwork', 'Technical Writing', 'Problem-solving', 'Creativity', 'Flexibility', 'Mentoring', 'Public Speaking'],
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [9, 8, 7, 8, 7, 8, 8, 8],
+                    backgroundColor: 'rgba(11, 123, 165, 0.2)', // #005271 in RGBA format
+                    borderColor: 'rgba(11, 123, 165, 1)',       // #005271 in RGBA format
+                    borderWidth: 2, // Increased border width for visibility
+                    pointBackgroundColor: 'rgba(11, 123, 165, 1)', // #005271 in RGBA format
+                    pointBorderColor: 'rgba(11, 123, 165, 1)',     // #005271 in RGBA format
+                    pointRadius: 6, // Make points even bigger
+                    pointHoverRadius: 8 // Make points more visible on hover
+                }]
             },
-            subtitle: { // Adding the description as a subtitle
-                display: true,
-                text: 'This radar chart showcases my proficiency levels in various soft skills',
-                align: 'start', // Align the subtitle to the left
-                font: {
-                    size: 14,
-                    weight: 'normal'
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Soft Skills',
+                        align: 'start', // Align the title to the left
+                        font: {
+                            size: 20,
+                            weight: 'bold'
+                        },
+                        color: 'black' // Set the title color to black
+                    },
+                    subtitle: { // Adding the description as a subtitle
+                        display: true,
+                        text: 'This radar chart showcases my proficiency levels in various soft skills',
+                        align: 'start', // Align the subtitle to the left
+                        font: {
+                            size: 14,
+                            weight: 'normal'
+                        },
+                        color: 'black'  // Dark text color for readability
+                    }
                 },
-                color: 'black'  // Dark text color for readability
-            }
-        },
-        scales: {
-            r: {
-                angleLines: {
-                    display: false
-                },
-                suggestedMin: 0,
-                suggestedMax: 10,
-                pointLabels: {
-                    font: {
-                        size: 14,
-                        weight: 'bold' // Make labels bold
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        pointLabels: {
+                            font: {
+                                size: 14,
+                                weight: 'bold' // Make labels bold
+                            }
+                        }
                     }
                 }
             }
-        }
-    }
-});
-
-  </script>  
-       
+        });
+    </script>  
 </body>
 </html>
