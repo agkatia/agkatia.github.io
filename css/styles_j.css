@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 /* General Styles */
 html, body {
-    font-family: 'Roboto Mono', monospace;
+font-family: 'Montserrat', sansserif;
     background: #212121;
     height: 100%;
     margin: 0;
