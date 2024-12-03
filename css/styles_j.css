@@ -77,12 +77,13 @@ html, body {
 }
 
 .introduction-frame {
-    background: linear-gradient(135deg, #3a7bd5, #3a6073); /* Gradient from a darker blue to a lighter blue */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
     margin: 20px 0 40px; /* Added space above and below introduction */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
     max-width: 60%; /* Center and narrow the frame */
+    color: #fff; /* White text color */
 }
 
 .intro-content {
