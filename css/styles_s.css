@@ -109,7 +109,6 @@ html, body {
 .small-chart {
     flex: 0 0 30%; /* Smaller size for each chart to fit two in a row */
 }
-
 .ntsmall-chart {
     flex: 0 0 30%;/* Smaller size for each chart to fit two in a row */
 }
