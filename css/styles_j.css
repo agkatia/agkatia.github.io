@@ -108,3 +108,29 @@ html, body {
     height: auto;
     margin-top: 50px; /* Add space above the image */
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .introduction-frame {
+        max-width: 90%; /* Increase width for better readability on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .intro-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: left; /* Align text to the left */
+    }
+
+    .intro-content p {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .avatar {
+        margin: 0 0 10px 0; /* Adjust margin for better spacing */
+        height: 100px; /* Reduce size for smaller screens */
+    }
+
+    .timeline {
+        max-width: 100%; /* Ensure the timeline image is fully visible */
+    }
+}
