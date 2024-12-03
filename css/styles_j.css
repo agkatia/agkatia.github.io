@@ -1,10 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
 /* General Styles */
 html, body {
-font-family: 'Montserrat', sansserif;
+    font-family: 'Montserrat', sans-serif;
     background: #212121;
     height: 100%;
     margin: 0;
@@ -91,6 +92,7 @@ font-family: 'Montserrat', sansserif;
 
 .intro-content p {
     font-size: 18px; /* Increase font size for the introduction text */
+    font-weight: 400; /* Ensure the text is not bold */
 }
 
 .avatar {
