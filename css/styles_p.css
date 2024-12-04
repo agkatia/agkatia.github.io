@@ -179,7 +179,7 @@ html, body {
 }
 
 .square {
-    min-width: 80%;
+    min-width: 100%;
     flex: 0 0 auto;
     margin-right: 10px; /* Adjust spacing between items */
     background: #333;
@@ -192,9 +192,10 @@ html, body {
 }
 
 .square img {
-    width: 40%; /* Adjust width to make sure it's centered and fits well */
+    width: 40%; /* Adjust width to 40% */
     height: auto;
     border-radius: 15px; /* Match the border radius with square */
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
 }
 
 .menu {
