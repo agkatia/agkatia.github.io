@@ -70,36 +70,17 @@
             <hr>
             <div class="project">
                 <h4>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together. Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.</h4>
-                <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="images/av1.png" alt="Image 1">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/av2.png" alt="Image 2">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/av3.png" alt="Image 3">
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Splide/3.6.9/splide.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Splide('#image-carousel', {
-                type: 'loop',
-                perPage: 1,
-                autoplay: true,
-                interval: 3000,
-                pauseOnHover: true,
-            }).mount();
-        });
-    </script>
+    // Get all the nav links
+    const navLinks = document.querySelectorAll('.navbar-right a');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+        // Check if the link href matches the current URL
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+</script>         
 </body>
 </html>
