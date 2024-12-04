@@ -186,10 +186,13 @@ html, body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative; /* Position relative for overlay text */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
 }
 
 .square img {
-    width: 40%;
+    width: 80%; /* Adjust width to make sure it's centered and fits well */
     height: auto;
     border-radius: 15px; /* Match the border radius with square */
 }
