@@ -161,7 +161,7 @@ html, body {
     height: 200px; /* Set the height */
 }
 
-image-carousel {
+.image-carousel {
     display: flex;
     flex-direction: column;
     gap: 1em;
