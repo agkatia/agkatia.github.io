@@ -216,7 +216,7 @@ html, body {
 
 .img-container {
     display: flex;
-   height: 500px;
+   height: 2000px;
     width: 1000px;
     border: 15px black;
     overflow-x: hidden;
@@ -232,7 +232,7 @@ html, body {
 }
 
 .b {
-    height: 50vh;
+    height: 100vh;0
     display: grid;
     margin: 0;
     place-items: center;
