@@ -182,21 +182,16 @@ html, body {
     min-width: 100%;
     flex: 0 0 auto;
     margin-right: 10px; /* Adjust spacing between items */
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradient blue background */
+    background: #333;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative; /* Position relative for overlay text */
-    display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: center; /* Center align items horizontally */
-    text-align: center; /* Center align text */
 }
 
 .square img {
-    width: 40%; /* Adjust width to 40% */
+    width: 100%;
     height: auto;
     border-radius: 15px; /* Match the border radius with square */
-    object-fit: contain; /* Ensure the image maintains aspect ratio */
 }
 
 .menu {
