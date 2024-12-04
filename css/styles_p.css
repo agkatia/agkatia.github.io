@@ -178,19 +178,7 @@ html, body {
     transition: transform 0.5s ease;
 }
 
-.square {
-    min-width: 40%;
-    flex: 0 0 auto;
-    margin-right: 10px; /* Adjust spacing between items */
-    background: #333;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Position relative for overlay text */
-     align-items: center; 
-    
-}
-
-.square img {
+.slider img {
     width: 40%;
     height: auto;
     border-radius: 15px; /* Match the border radius with square */
