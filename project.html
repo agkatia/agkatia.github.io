@@ -70,38 +70,29 @@
             <hr>
             <div class="project">
                 <h4>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together. Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.</h4>
-                
-                <div class="cont">
-                    <div class="slider">
-                        <div class="square" data-index="1">
-                            <a href="project1.html"><img src="images/project1.jpg" alt="Project 1" class="content-image"></a>
-                        </div>
-                        <div class="square" data-index="2">
-                            <a href="project2.html"><img src="images/project2.jpg" alt="Project 2" class="content-image"></a>
-                        </div>
-                        <div class="square" data-index="3">
-                            <a href="project3.html"><img src="images/project3.jpg" alt="Project 3" class="content-image"></a>
-                        </div>
-                        <div class="square" data-index="4">
-                            <a href="project4.html"><img src="images/project4.jpg" alt="Project 4" class="content-image"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu">
-                    <div class="menu-item" data-index="1">
-                        <i class="icon">1</i>
-                    </div>
-                    <div class="menu-item" data-index="2">
-                        <i class="icon">2</i>
-                    </div>
-                    <div class="menu-item" data-index="3">
-                        <i class="icon">3</i>
-                    </div>
-                    <div class="menu-item" data-index="4">
-                        <i class="icon">4</i>
-                    </div>
-                </div>
-            </div>
+  
+              <div class="b">
+
+<div class="image-carousel">
+    <div class="cont">
+      <div class="left-arrow">&lt; </div>
+      <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs13t1UBAivpE0tOCEC2A8AiOqzRS0IKt3rg&usqp=CAU"
+          alt="Pixel art of a landscape">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KehQPJN0njTzAB0KAcPgDg5sL1wHfz5JuA&usqp=CAU"
+          alt="Pixel art of mountain">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR75_xk_Izb-fE4zk1x_TyOozY72LhThAtP0Q&usqp=CAU"
+          alt="Pixel art of a planet">
+ 
+      </div>
+      <div class="right-arrow">&gt</div>
+    </div>
+    <div class="dots">
+    </div>
+    </div>
+  </div>
+  
+    </div>
         </section>   
     </div>
     <script>
@@ -115,25 +106,7 @@
                 link.classList.add('active');
             }
         });
-
-        // JavaScript for the carousel
-        const squares = document.querySelectorAll('.square');
-        const menuItems = document.querySelectorAll('.menu-item');
-
-        menuItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const index = item.getAttribute('data-index');
-                squares.forEach(square => {
-                    square.style.transform = `translateX(-${(index - 1) * 100}%)`;
-                });
-                menuItems.forEach(menu => menu.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-
-        // Initialize the first square as visible
-        squares[0].style.transform = 'translateX(0)';
-        menuItems[0].classList.add('active');
+    
     </script>
 </body>
 </html>
