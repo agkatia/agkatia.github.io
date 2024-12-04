@@ -72,23 +72,21 @@
           <hr>
             <div class="project">
                 <h4>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together.Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.  </h4>
-
-
- <!-- Slideshow container -->
-
-<div class="carousel">
-  <div class="carousel-track">
-    <div class="carousel-item active">
-      <img src="images/av1.png" alt="Image 1">
-    </div>
-    <div class="carousel-item">
-      <img src="images/av2.png" alt="Image 2">
-    </div>
-    <div class="carousel-item">
-      <img src="images/dz.png" alt="Image 3">
-    </div>
+<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="images/av1.png" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="images/av1.png" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="images/av1.png" alt="">
+			</li>
+		</ul>
   </div>
-</div>
+</section>
 
   <!-- Full-width images with number and caption text -->
   
@@ -107,6 +105,9 @@
         }
     });
 </script>
-
+<script>
+  new Splide( '#image-carousel' ).mount();
+</script>
+    
 </body>
 </html>
