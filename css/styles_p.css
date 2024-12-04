@@ -161,29 +161,3 @@ html, body {
     height: 200px; /* Set the height */
 }
 
-.splide__slide img {
-    width: 40%;
-    height: auto;
-}
-
-/* Additional carousel styling */
-.splide__track {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-.splide__list {
-    display: flex;
-    scroll-snap-type: x mandatory;
-}
-
-.splide__slide {
-    min-width: 300px;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin-right: 10px; /* Adjust spacing between items */
-    background: #333;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
