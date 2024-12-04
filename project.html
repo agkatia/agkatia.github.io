@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOUDJIL KATIA - My Projects</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Splide/3.6.9/splide.min.css">
     <link rel="stylesheet" href="css/styles_p.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -46,7 +46,6 @@
                 </div>
                 <img src="images/chifa.png" alt="Education Building" class="education-image">
             </div>
-
             <div class="education-details flex-container">
                 <div class="text-content">
                     <h3><u>DSIS CNAS : Revenue And Recovery Component (12/2022 - 08/2023)</u></h3>
@@ -70,6 +69,40 @@
             <hr>
             <div class="project">
                 <h4>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together. Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.</h4>
+              
+                <div class="cont">
+                    <div class="slider">
+                        <div class="square" data-index="1">
+                            <img src="images/project1.jpg" alt="Project 1" class="content-image">
+                        </div>
+                        <div class="square" data-index="2">
+                            <img src="images/project2.jpg" alt="Project 2" class="content-image">
+                        </div>
+                        <div class="square" data-index="3">
+                            <img src="images/project3.jpg" alt="Project 3" class="content-image">
+                        </div>
+                        <div class="square" data-index="4">
+                            <img src="images/project4.jpg" alt="Project 4" class="content-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-item" data-index="1">
+                        <i class="icon">1</i>
+                    </div>
+                    <div class="menu-item" data-index="2">
+                        <i class="icon">2</i>
+                    </div>
+                    <div class="menu-item" data-index="3">
+                        <i class="icon">3</i>
+                    </div>
+                    <div class="menu-item" data-index="4">
+                        <i class="icon">4</i>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
     <script>
     // Get all the nav links
     const navLinks = document.querySelectorAll('.navbar-right a');
@@ -81,6 +114,6 @@
             link.classList.add('active');
         }
     });
-</script>         
+    </script>  
 </body>
 </html>
