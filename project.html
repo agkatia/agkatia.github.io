@@ -46,6 +46,7 @@
                 </div>
                 <img src="images/chifa.png" alt="Education Building" class="education-image">
             </div>
+
             <div class="education-details flex-container">
                 <div class="text-content">
                     <h3><u>DSIS CNAS : Revenue And Recovery Component (12/2022 - 08/2023)</u></h3>
@@ -69,7 +70,7 @@
             <hr>
             <div class="project">
                 <h4>In addition to my professional work, I enjoy taking on side projects that allow me to explore new skills, technologies, and creative solutions. These projects showcase my passion for continuous learning and innovation. If you find any of these initiatives interesting and would like to contribute, I’d be thrilled to collaborate and work together. Dive in to see some of the exciting and diverse initiatives I’ve been working on lately.</h4>
-              
+                
                 <div class="cont">
                     <div class="slider">
                         <div class="square" data-index="1">
@@ -104,15 +105,35 @@
         </section>   
     </div>
     <script>
-    // Get all the nav links
-    const navLinks = document.querySelectorAll('.navbar-right a');
-    // Loop through each link
-    navLinks.forEach(link => {
-        // Check if the link href matches the current URL
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
-    });
-    </script>  
+        // Get all the nav links
+        const navLinks = document.querySelectorAll('.navbar-right a');
+
+        // Loop through each link
+        navLinks.forEach(link => {
+            // Check if the link href matches the current URL
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+        // JavaScript for the carousel
+        const squares = document.querySelectorAll('.square');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const index = item.getAttribute('data-index');
+                squares.forEach(square => {
+                    square.style.transform = `translateX(-${(index - 1) * 100}%)`;
+                });
+                menuItems.forEach(menu => menu.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Initialize the first square as visible
+        squares[0].style.transform = 'translateX(0)';
+        menuItems[0].classList.add('active');
+    </script>
 </body>
 </html>
