@@ -216,14 +216,14 @@ image-carousel {
 
 .img-container {
     display: flex;
-    height: 200px;
-    width: 300px;
+   height: 500px;
+    width: 1000px;
     border: 15px black;
     overflow-x: hidden;
 }
 
 .img-container img {
-    flex: 1 0 50%;
+    flex: 1 0 100%;
     object-fit: cover;
 }
 
