@@ -216,14 +216,14 @@ html, body {
 
 .img-container {
     display: flex;
-   height: 2000px;
-    width: 1000px;
+   height: 200px;
+    width: 300px;
     border: 15px black;
     overflow-x: hidden;
 }
 
 .img-container img {
-    flex: 1 0 100%;
+    flex: 1 0 50%;
     object-fit: cover;
 }
 
@@ -232,7 +232,7 @@ html, body {
 }
 
 .b {
-    height: 100vh;0
+    height: 120vh;0
     display: grid;
     margin: 0;
     place-items: center;
