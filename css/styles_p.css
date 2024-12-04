@@ -223,7 +223,7 @@ image-carousel {
 }
 
 .img-container img {
-    flex: 1 0 70%;
+    flex: 1 0 80%;
     object-fit: cover;
 }
 
