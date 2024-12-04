@@ -189,7 +189,7 @@ html, body {
 }
 
 .square img {
-    width: 20%;
+    width: 40%;
     height: auto;
     border-radius: 15px; /* Match the border radius with square */
 }
