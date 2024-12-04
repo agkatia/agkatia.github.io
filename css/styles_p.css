@@ -161,7 +161,7 @@ html, body {
     height: 200px; /* Set the height */
 }
 
-.image-carousel {
+image-carousel {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -216,7 +216,7 @@ html, body {
 
 .img-container {
     display: flex;
-   height: 200px;
+    height: 200px;
     width: 300px;
     border: 15px black;
     overflow-x: hidden;
@@ -232,7 +232,7 @@ html, body {
 }
 
 .b {
-    height: 120vh;0
+    height: 120vh;
     display: grid;
     margin: 0;
     place-items: center;
