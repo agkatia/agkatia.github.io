@@ -189,6 +189,7 @@ html, body {
     display: flex;
     align-items: center; /* Center align items vertically */
     justify-content: center; /* Center align items horizontally */
+    text-align: center; /* Center align text */
 }
 
 .square img {
