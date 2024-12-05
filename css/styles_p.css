@@ -225,12 +225,13 @@ html, body {
 .img-container {
     display: flex;
     justify-content: center; /* Centers the image horizontally */
+    align-items: center;     /* Centers the image vertically */
     height: 70%;
-    width: 900px;
+    width: 100%; /* Set width to 100% of the parent */
+    max-width: 900px; /* Set a maximum width */
     border: 15px black;
     overflow-x: hidden;
     margin-top: -100px; /* Adjust this value as needed */
-    
     margin-left: auto;  /* Center the container itself */
     margin-right: auto; /* Center the container itself */
 }
