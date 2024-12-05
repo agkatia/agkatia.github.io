@@ -229,7 +229,7 @@ image-carousel {
     width: 900px;
     border: 15px black;
     overflow-x: hidden;
-    margin-top: -10px; /* Adjust this value as needed */
+    margin-top: -100px; /* Adjust this value as needed */
     
     margin-left: auto;  /* Center the container itself */
     margin-right: auto; /* Center the container itself */
