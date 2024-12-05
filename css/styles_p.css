@@ -88,7 +88,7 @@ html, body {
 .graduation-project {
     max-width: 1100px; /* Increase max-width for bigger frame */
     width: 100%;
-    padding: 30px; /* Increase padding for bigger frame */
+    padding: 20px; /* Increase padding for bigger frame */
     margin: 10px 0; /* Increase margin for better spacing */
     background: #333;
     border-radius: 15px;
