@@ -14,7 +14,6 @@ function previousImg() {
   imgIndex = (imgIndex > 0) ? imgIndex - 1 : imgUrlsArr.length - 1;
   articleContainer.innerHTML = `<img src="${imgUrlsArr[imgIndex]}" class="image" />`;
 }
-
 function nextImg() {
   imgIndex = (imgIndex < imgUrlsArr.length - 1) ? imgIndex + 1 : 0;
   articleContainer.innerHTML = `<img src="${imgUrlsArr[imgIndex]}" class="image" />`;
