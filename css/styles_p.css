@@ -195,7 +195,7 @@ html, body {
 .leftArrow {
   all: unset;
   position: absolute;
-   right: 1050px;
+   right: 1100px;
   padding: 0.5rem;
   color: #1591ea;
   font-size: 2rem;
@@ -206,7 +206,7 @@ align-items: center;    justify-content: center;
 
 .rightArrow {
   all: unset;
-  left: 1050px;
+  left: 1100px;
   padding: 0.5rem;
   position: absolute;
   color: #1591ea;
