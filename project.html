@@ -79,5 +79,17 @@
 <!-- Info-link -->
 <aside> Visit <a href="https://github.com/agkatia/PowerBi-Portfolio" target="_blank" rel="noopener noreferrer">My GitHub </a> For More Details
 </aside>   
+                   <script>
+    // Get all the nav links
+    const navLinks = document.querySelectorAll('.navbar-right a');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+        // Check if the link href matches the current URL
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+</script>
 </body>
 </html>
