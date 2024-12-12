@@ -177,6 +177,8 @@ html, body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+       text-align: center;
+
     border-radius: 15px; /* Make the logo rounded square */
 }
 
