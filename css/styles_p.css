@@ -219,13 +219,13 @@ align-items: center;    justify-content: center;
 .rightArrow:hover {
   background: rgb(0, 0, 0, 0.2);
 }
-aside {
+.aside {
   margin: 1rem auto;
   color: #01012b;
   font-size: 1rem;
   text-align: center;
    color: #ffff;
 }
-a {
+.a {
   color: #ffff;
 }
