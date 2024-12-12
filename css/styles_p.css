@@ -171,8 +171,7 @@ html, body {
 }
 
 .image {
-  width: 400px;
-  height: 400px;
+   width: 650px; /* Set the width */ height: 400px; /* Set the height */
   animation: slide 0.5s linear;
    margin-bottom: 10px;
     display: block;
