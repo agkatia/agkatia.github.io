@@ -1,7 +1,7 @@
 const imgUrlsArr = [
-  "https://github.com/agkatia/agkatia.github.io/blob/main/images/p1.png",
-  "https://github.com/agkatia/agkatia.github.io/blob/main/images/p2.png",
-  "https://github.com/agkatia/agkatia.github.io/blob/main/images/p3.png"
+  "https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/p1.png",
+  "https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/p2.png",
+  "https://raw.githubusercontent.com/agkatia/agkatia.github.io/refs/heads/main/images/p3.png"
 ];
 
 const articleContainer = document.getElementById("article-container");
