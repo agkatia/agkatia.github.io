@@ -1,1 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+    color: #FAFAFA;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 14px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-left span {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+/* Navbar links */
+.navbar-right a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.navbar-right a:hover, .navbar-right a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Increased space below navbar */
+    text-align: center;
+    padding: 40px; /* Increase padding for bigger frame */
+}
+
+.education-section {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 80px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.graduation-project {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 10px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex container styling */
+.flex-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Add space between text and image */
+}
+
+.education-details, .project {
+    text-align: left;
+}
+
+.university-logo, .project-logo {
+    width: 150px; /* Adjust the size of the logos */
+    height: 150px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px; /* Make the logo rounded square */
+}
+
+.education-image, .project-screenshot {
+    flex: 1;
+    max-width: 300px; /* Set a fixed maximum size for the images */
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* Set the width */
+    height: 200px; /* Set the height */
+}
+
+.final-dissertation {
+    margin-top: 20px;
+}
+
+.highlight {
+    font-weight: 900; /* Make the word 'HERE' bolder */
+    text-decoration: underline; /* Keep the underline */
+}
+
+/* Additional styling for project images */
+.project-images {
+    display: flex;
+    justify-content: space-between; /* Arrange images in a row with space between */
+    gap: 0.5px; /* Add space between images */
+}
+
+.project-screenshot {
+    max-width: 300px; /* Set a fixed maximum size for the images */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* Set the width */
+    height: 200px; /* Set the height */
+}
+
+
+
+.section {
+
+  width: 400px;
+  height: 400px;
+ 
+}
+
+.image {
+   width: 650px; /* Set the width */ height: 400px; /* Set the height */
+  animation: slide 0.5s linear;
+   margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+       text-align: center;
+
+    border-radius: 15px; /* Make the logo rounded square */
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.leftArrow {
+  all: unset;
+  position: absolute;
+   right: 1100px;
+  padding: 0.5rem;
+  color: #1591ea;
+  font-size: 2rem;
+  cursor: pointer;
+   
+}
+
+.rightArrow {
+  all: unset;
+  left: 1100px;
+  padding: 0.5rem;
+  position: absolute;
+  color: #1591ea;
+  font-size: 2rem;
+  cursor: pointer;
+
+
+}
+
+.leftArrow:hover,
+.rightArrow:hover {
+  background: rgb(0, 0, 0, 0.2);
+}
+aside {
+  margin: 2rem auto;
+  color: #01012b;
+  font-size: 1.1rem;
+  text-align: center;
+   color: #ffff;
+}
+a {
+  color: #ffff;
+}
