@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
+/* General Styles */
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
-    color: #FAFAFA;
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
     box-sizing: border-box;
 }
 
@@ -70,162 +71,66 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px; /* Increased space below navbar */
+    min-height: 100vh;
+    padding-top: 100px; /* Increased space below navbar */
     text-align: center;
-    padding: 40px; /* Increase padding for bigger frame */
 }
 
-.education-section {
-    max-width: 1100px; /* Increase max-width for bigger frame */
-    width: 100%;
-    padding: 30px; /* Increase padding for bigger frame */
-    margin: 80px 0; /* Increase margin for better spacing */
-    background: #333;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.introduction-frame {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px 0 40px; /* Added space above and below introduction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    max-width: 60%; /* Center and narrow the frame */
+    color: #fff; /* White text color */
 }
 
-.graduation-project {
-    max-width: 1100px; /* Increase max-width for bigger frame */
-    width: 100%;
-    padding: 30px; /* Increase padding for bigger frame */
-    margin: 10px 0; /* Increase margin for better spacing */
-    background: #333;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Flex container styling */
-.flex-container {
+.intro-content {
     display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: space-between; /* Space between items */
+    align-items: center;
 }
 
-.text-content {
-    flex: 1;
-    text-align: left;
-    margin-right: 20px; /* Add space between text and image */
+.intro-content p {
+    font-size: 18px; /* Increase font size for the introduction text */
+    font-weight: 400; /* Ensure the text is not bold */
 }
 
-.education-details, .project {
-    text-align: left;
+.avatar {
+    width: auto;
+    height: 150px; /* Reduced size of the avatar while keeping edges visible */
+    margin-right: 20px;
+    border-radius: 15px; /* Optional: make avatar circular */
 }
 
-.university-logo, .project-logo {
-    width: 150px; /* Adjust the size of the logos */
-    height: 150px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px; /* Make the logo rounded square */
-}
-
-.education-image, .project-screenshot {
-    flex: 1;
-    max-width: 300px; /* Set a fixed maximum size for the images */
+.timeline {
+    max-width: 80%;
     height: auto;
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px; /* Set the width */
-    height: 200px; /* Set the height */
+    margin-top: 50px; /* Add space above the image */
 }
 
-.final-dissertation {
-    margin-top: 20px;
-}
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .introduction-frame {
+        max-width: 90%; /* Increase width for better readability on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
 
-.highlight {
-    font-weight: 900; /* Make the word 'HERE' bolder */
-    text-decoration: underline; /* Keep the underline */
-}
+    .intro-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: left; /* Align text to the left */
+    }
 
-/* Additional styling for project images */
-.project-images {
-    display: flex;
-    justify-content: space-between; /* Arrange images in a row with space between */
-    gap: 0.5px; /* Add space between images */
-}
+    .intro-content p {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
 
-.project-screenshot {
-    max-width: 300px; /* Set a fixed maximum size for the images */
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px; /* Set the width */
-    height: 200px; /* Set the height */
-}
+    .avatar {
+        margin: 0 0 10px 0; /* Adjust margin for better spacing */
+        height: 100px; /* Reduce size for smaller screens */
+    }
 
-
-
-.section {
-
-  width: 400px;
-  height: 400px;
- 
-}
-
-.image {
-   width: 650px; /* Set the width */ height: 400px; /* Set the height */
-  animation: slide 0.5s linear;
-   margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-       text-align: center;
-
-    border-radius: 15px; /* Make the logo rounded square */
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.leftArrow {
-  all: unset;
-  position: absolute;
-   right: 1100px;
-  padding: 0.5rem;
-  color: #1591ea;
-  font-size: 2rem;
-  cursor: pointer;
-   
-}
-
-.rightArrow {
-  all: unset;
-  left: 1100px;
-  padding: 0.5rem;
-  position: absolute;
-  color: #1591ea;
-  font-size: 2rem;
-  cursor: pointer;
-
-
-}
-
-.leftArrow:hover,
-.rightArrow:hover {
-  background: rgb(0, 0, 0, 0.2);
-}
-aside {
-  margin: 2rem auto;
-  color: #01012b;
-  font-size: 1.1rem;
-  text-align: center;
-   color: #ffff;
-}
-a {
-  color: #ffff;
+    .timeline {
+        max-width: 100%; /* Ensure the timeline image is fully visible */
+    }
 }
