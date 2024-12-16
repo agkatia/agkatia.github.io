@@ -161,68 +161,6 @@ html, body {
     height: 200px; /* Set the height */
 }
 
-.section {
-    width: 400px;
-    height: 400px;
-}
-
-.image {
-    width: 650px; /* Set the width */ 
-    height: 400px; /* Set the height */
-    animation: slide 0.5s linear;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 15px; /* Make the logo rounded square */
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.leftArrow {
-    all: unset;
-    position: absolute;
-    right: 1100px;
-    padding: 0.5rem;
-    color: #1591ea;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.rightArrow {
-    all: unset;
-    left: 1100px;
-    padding: 0.5rem;
-    position: absolute;
-    color: #1591ea;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.leftArrow:hover,
-.rightArrow:hover {
-    background: rgb(0, 0, 0, 0.2);
-}
-
-aside {
-    margin: 2rem auto;
-    color: #01012b;
-    font-size: 1.1rem;
-    text-align: center;
-    color: #ffff;
-}
-
-a {
-    color: #ffff;
-}
 
 .introduction-frame {
     background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
