@@ -85,11 +85,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
-    min-height: 20vh; /* Adjust height as needed */
+    min-height: 20px; /* Adjust height as needed */
     text-align: center; /* Center-align text within the container */
     margin: 0 auto; /* Center container horizontally */
-    padding: 5px; /* Reduced padding for better readability */
-    margin-top: -20px; /* Reduced space above the introduction */
+    padding: 20px; /* Reduced padding for better readability */
+    margin-top: -100px; /* Reduced space above the introduction */
 }
 
 .introduction {
@@ -112,7 +112,7 @@ html, body {
 }
 
 .wrapper {
-  margin-top: 30px;
+  margin-top: 20px;
   height: 30vh;
   width: auto;
   display: flex;
