@@ -168,3 +168,64 @@ html, body {
     transform: scale(1.2); /* Scale up the icon on hover */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the links */
+  }
+
+  .navbar-right a {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; /* Make links take full width */
+    text-align: center; /* Center align text */
+  }
+
+  .profile-picture {
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px;
+  }
+
+  .introduction {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Add padding for better readability */
+  }
+
+  .social-links {
+    margin-top: 20px; /* Reduce space above icons */
+  }
+
+  .social-icon {
+    width: 35px; /* Adjust the size of the icons */
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .profile-picture {
+    width: 150px; /* Adjust the size of the profile picture */
+    height: 150px;
+  }
+
+  .introduction {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .social-icon {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px;
+  }
+}
