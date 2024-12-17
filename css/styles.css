@@ -149,3 +149,22 @@ html, body {
 /* Define a custom class for extra bold text */
 .extra-bold { font-family: 'Montserrat', sans-serif;
 }
+
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center-align the icons */
+    margin-top: 50px; /* Add space above the icons */
+}
+
+.social-icon {
+    width: 45px; /* Adjust the size of the icons */
+    height: 45px;
+    margin: 0 10px; /* Space between the icons */
+    transition: transform 0.3s; /* Add a transition effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
