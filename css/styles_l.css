@@ -89,7 +89,7 @@ html, body {
     max-width: 1100px; /* Increase max-width for bigger frame */
     width: 100%;
     padding: 30px; /* Increase padding for bigger frame */
-    margin: 10px 0; /* Increase margin for better spacing */
+    margin: -10px 0; /* Increase margin for better spacing */
     background: #333;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -166,7 +166,7 @@ html, body {
     background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
     padding: 20px;
     border-radius: 15px; /* Rounded corners */
-    margin: 20px 0 40px; /* Added space above and below introduction */
+    margin: 80px 0 -10px; /* Added space above and below introduction */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
     max-width: 60%; /* Center and narrow the frame */
     color: #fff; /* White text color */
