@@ -2,20 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
 html, body {
     font-family: 'Roboto Mono', monospace;
     background: #212121;
+    color: #FAFAFA;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
     box-sizing: border-box;
 }
-
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+/* Navbar styling */
 .navbar {
     background-color: #333;
     padding: 14px 16px;
@@ -23,10 +23,10 @@ html, body {
     width: 100%;
     top: 0;
     display: flex;
-    justify-content: space-between; /* Space between left and right sections */
-    align-items: center; /* Vertically center the content */
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 10; /* Ensure navbar is above other elements */
+    z-index: 10;
 }
 
 .navbar-left {
@@ -35,9 +35,9 @@ html, body {
 }
 
 .flag {
-    width: 25px; /* Adjust the size of the flag */
+    width: 25px;
     height: auto;
-    margin-right: 20px; /* Space between the flag and text */
+    margin-right: 8px;
 }
 
 .navbar-left span {
@@ -63,89 +63,83 @@ html, body {
 }
 
 
-.profile-picture-container {
-    display: flex;
-    justify-content: center; /* Center-align the image */
-    margin-bottom: 5px; /* Reduced space below the image */
-}
-
-.profile-picture {
-    width: 300px; /* Adjust the size of the profile picture */
-    height: 300px;
-    border-radius: 50%; /* Make it circular */
-    object-fit: cover; /* Ensure the image covers the circle */
-    margin-top: 20px; /* Add space above the image */
-    box-shadow:
-        -50px -50px 0 -40px var(--red),
-        50px 50px 0 -40px var(--red); /* Add shadow to restore frame effect */
-}
-
-.introduction-container {
+/* Main container styling */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
-    min-height: 20px; /* Adjust height as needed */
-    text-align: center; /* Center-align text within the container */
-    margin: 0 auto; /* Center container horizontally */
-    padding: 20px; /* Reduced padding for better readability */
-    margin-top: -60px; /* Reduced space above the introduction */
+    justify-content: center;
+    padding-top: 80px; /* Increased space below navbar */
+    text-align: center;
+    padding: 40px; /* Increase padding for bigger frame */
 }
 
-.introduction {
-    font-family: 'Roboto Mono', monospace; /* Different font for introduction */
-    max-width: 800px; /* Limit the width for better readability */
-    color: #FAFAFA; /* Set text color to white */
-    font-size: 20px; /* Adjust font size for readability */
-    text-align: center; /* Center the text */
-    margin: 5px; /* Reduced margin for better spacing */
-}
-:root {
-  --red: #4169E1;
-  --bgColor: bisque;
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Increased space below navbar */
+    text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.introduction-frame {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px 0 40px; /* Added space above and below introduction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    max-width: 60%; /* Center and narrow the frame */
+    color: #fff; /* White text color */
 }
 
-.wrapper {
-  margin-top: 20px;
-  height: 30vh;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-   font-family: 'Roboto Slab', serif;
-   color: #ffffff;
-   font-size: 20px; 
-}
-.effect-wrapper {
-  text-align: center;
-  font-weight: normal;
+.intro-content {
+    display: flex;
+    align-items: center;
 }
 
-#typed {
-  font-weight: bold;
-  color: #4169E1;
+.intro-content p {
+    font-size: 18px; /* Increase font size for the introduction text */
+    font-weight: 400; /* Ensure the text is not bold */
 }
 
-.cursor {
-  display: inline-block;
-  background-color: #b0ff95;
-  animation: blinker 900ms infinite;
+.avatar {
+    width: auto;
+    height: 150px; /* Reduced size of the avatar while keeping edges visible */
+    margin-right: 20px;
+    border-radius: 15px; /* Optional: make avatar circular */
 }
 
-.cursor.typing-true {
-  animation: none;
+
+.education-section {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 30px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-@keyframes blinker {
-	0% { background-color: #4169E1; }
-	50% { background-color: transparent; }
-	100% { background-color: #4169E1; }
+
+
+.graduation-project {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 30px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/* Define a custom class for extra bold text */
-.extra-bold { font-family: 'Montserrat', sans-serif;
+
+/* Flex container styling */
+.flex-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between items */
 }
+
+.video-container { display: flex; justify-content: center; /* Center the videos horizontally */ gap: 20px; /* Add space between the videos */ flex-wrap: wrap; /* Ensure videos stack on smaller screens */ } 
+.video-container iframe { flex: 1; max-width: 450px; /* Keep the original width */ height: 250px; /* Maintain aspect ratio */ }
