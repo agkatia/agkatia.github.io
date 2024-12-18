@@ -16,6 +16,7 @@ html, body {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
 .navbar {
     background-color: #333;
     padding: 14px 16px;
@@ -62,11 +63,11 @@ html, body {
     color: black;
 }
 
-
 .profile-picture-container {
     display: flex;
-    justify-content: center; /* Center-align the image */
-    margin-bottom: 5px; /* Reduced space below the image */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the content */
+    margin-bottom: 20px; /* Space below the profile picture */
 }
 
 .profile-picture {
@@ -75,9 +76,7 @@ html, body {
     border-radius: 50%; /* Make it circular */
     object-fit: cover; /* Ensure the image covers the circle */
     margin-top: 20px; /* Add space above the image */
-    box-shadow:
-        -50px -50px 0 -40px var(--red),
-        50px 50px 0 -40px var(--red); /* Add shadow to restore frame effect */
+    box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red); /* Add shadow to restore frame effect */
 }
 
 .introduction-container {
@@ -100,6 +99,7 @@ html, body {
     text-align: center; /* Center the text */
     margin: 5px; /* Reduced margin for better spacing */
 }
+
 :root {
   --red: #4169E1;
   --bgColor: bisque;
@@ -118,10 +118,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-   font-family: 'Roboto Slab', serif;
-   color: #ffffff;
-   font-size: 20px; 
+  font-family: 'Roboto Slab', serif;
+  color: #ffffff;
+  font-size: 20px; 
 }
+
 .effect-wrapper {
   text-align: center;
   font-weight: normal;
@@ -141,31 +142,32 @@ html, body {
 .cursor.typing-true {
   animation: none;
 }
+
 @keyframes blinker {
-	0% { background-color: #4169E1; }
-	50% { background-color: transparent; }
-	100% { background-color: #4169E1; }
-}
-/* Define a custom class for extra bold text */
-.extra-bold { font-family: 'Montserrat', sans-serif;
+  0% { background-color: #4169E1; }
+  50% { background-color: transparent; }
+  100% { background-color: #4169E1; }
 }
 
+/* Define a custom class for extra bold text */
+.extra-bold { font-family: 'Montserrat', sans-serif; }
 
 .social-links {
-    display: flex;
-    justify-content: center; /* Center-align the icons */
-    margin-top: 50px; /* Add space above the icons */
+  display: flex;
+  justify-content: center; /* Center-align the icons */
+  margin-top: 50px; /* Add space above the icons */
+  flex-wrap: wrap; /* Allow icons to wrap on small screens */
 }
 
 .social-icon {
-    width: 45px; /* Adjust the size of the icons */
-    height: 45px;
-    margin: 0 10px; /* Space between the icons */
-    transition: transform 0.3s; /* Add a transition effect */
+  width: 45px; /* Adjust the size of the icons */
+  height: 45px;
+  margin: 10px; /* Space around the icons for better wrapping */
+  transition: transform 0.3s; /* Add a transition effect */
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* Scale up the icon on hover */
+  transform: scale(1.2); /* Scale up the icon on hover */
 }
 
 /* Responsive adjustments */
