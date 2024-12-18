@@ -224,6 +224,7 @@ html, body {
 
   .introduction {
     font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Add padding for better readability */
   }
 
   .social-icon {
