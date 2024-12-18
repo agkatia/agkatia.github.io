@@ -193,8 +193,8 @@ html, body {
 
   .introduction {
     font-size: 18px; /* Adjust font size for smaller screens */
-  margin-bottom: 100px;
-    margin-top: 50px;
+  margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   .social-links {
@@ -228,8 +228,8 @@ html, body {
 
   .introduction {
     font-size: 16px; /* Adjust font size for smaller screens */
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   .social-icon {
