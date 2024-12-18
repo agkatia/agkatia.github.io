@@ -155,7 +155,7 @@ html, body {
 .social-links {
   display: flex;
   justify-content: center; /* Center-align the icons */
-  margin-top: 50px; /* Add space above the icons */
+  margin-top: 80px; /* Add space above the icons */
   flex-wrap: wrap; /* Allow icons to wrap on small screens */
 }
 
@@ -188,11 +188,13 @@ html, body {
   .profile-picture {
     width: 200px; /* Adjust the size of the profile picture */
     height: 200px;
+    margin-top: -50px; /* Add space above the image */
   }
 
   .introduction {
     font-size: 18px; /* Adjust font size for smaller screens */
-    padding: 10px; /* Add padding for better readability */
+  margin-bottom: 100px;
+    margin-top: 270px;
   }
 
   .social-links {
@@ -203,6 +205,7 @@ html, body {
     width: 35px; /* Adjust the size of the icons */
     height: 35px;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -218,17 +221,21 @@ html, body {
   }
 
   .profile-picture {
-    width: 150px; /* Adjust the size of the profile picture */
-    height: 150px;
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px;
+     margin-top: -50px; /* Add space above the image */
   }
 
   .introduction {
     font-size: 16px; /* Adjust font size for smaller screens */
-    padding: 10px; /* Add padding for better readability */
+    margin-bottom: 100px;
+    margin-top: 270px;
   }
 
   .social-icon {
     width: 30px; /* Adjust the size of the icons */
     height: 30px;
   }
+  
 }
+
